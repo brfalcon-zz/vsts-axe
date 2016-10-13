@@ -48,6 +48,12 @@ var gruntargs =  '--urls=' + urls + ' --urlfile=' + urlfile + '  --tags='  + tag
 
 gt.argString(gruntargs);
 gt.exec().then(function (code) {
+    var reportFileName = reportFileName || "output.json";
+    
+    var Report = require('./accessibilityReport.js');
+    var report = new Report(reportFileName);
+
+    report.AddNewReport(); 
     tl.setResult(tl.TaskResult.Succeeded, tl.loc('GruntReturnCode', code));
 }).fail(function (err) {
     tl.debug('taskRunner fail');
