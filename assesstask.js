@@ -34,9 +34,13 @@ else {
 gt.arg(tl.getDelimitedInput('targets', ' ', false));
 gt.arg('--gruntfile');
 gt.pathArg(gruntFile);
-//tl.getInput('arguments', false)
+var urls = tl.getInput('urls', false);
+var urlfile = tl.getInput('urlfile', false);
+var browser = tl.getInput('browser', false);
+var tags = tl.getInput('tags', false);
 
-var gruntargs = '--browser=phantomjs --u=www.uol.com.br,http://www.tjsp.jus.br/Egov/Conciliacao/Default.aspx?f=2,http://www.tjsp.jus.br/EGov/Segmento/Administracao/Default.aspx?f=3 --force'
+
+var gruntargs =  '--urls=' + urls + ' --urlfile=' + urlfile + ' --browser=' + browser + '  --tags='  + tags + ' --force' 
 
 gt.argString(gruntargs);
 gt.exec().then(function (code) {
