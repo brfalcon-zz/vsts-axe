@@ -34,15 +34,12 @@ else {
 gt.arg(tl.getDelimitedInput('targets', ' ', false));
 gt.arg('--gruntfile');
 gt.pathArg(gruntFile);
+//tl.getInput('arguments', false)
 
+var gruntargs = '--browser=phantomjs --u=www.uol.com.br,http://www.tjsp.jus.br/Egov/Conciliacao/Default.aspx?f=2,http://www.tjsp.jus.br/EGov/Segmento/Administracao/Default.aspx?f=3 --force'
+
+gt.argString(gruntargs);
 gt.exec().then(function (code) {
-    var reportFileName = reportFileName || "output.json";
-    
-    var Report = require('./accessibilityReport.js');
-    var report = new Report(reportFileName);
-
-    report.AddNewReport();
-    
     tl.setResult(tl.TaskResult.Succeeded, tl.loc('GruntReturnCode', code));
 }).fail(function (err) {
     tl.debug('taskRunner fail');
