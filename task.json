@@ -26,7 +26,7 @@
         {
             "name": "urlfile",
             "type": "string",
-            "label": "Urls To Test",
+            "label": "File Path with the Url to test",
             "defaultValue": "",
             "required": false,
             "helpMarkDown": "Path to file with url to be tested. IF provided URL To Test will be ignored"
