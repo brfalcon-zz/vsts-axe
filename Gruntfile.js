@@ -4,7 +4,6 @@ module.exports = function (grunt) {
   var urls;
 
 
-urlfile=".\\urls.txt";
 
 if(urlfile)
 {

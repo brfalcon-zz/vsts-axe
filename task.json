@@ -25,11 +25,12 @@
     "inputs": [
         {
             "name": "urlfile",
-            "type": "string",
-            "label": "File Path with the Url to test",
+            "type": "filePath",
+            "label": "Urls File",
             "defaultValue": "",
             "required": false,
             "helpMarkDown": "Path to file with url to be tested. IF provided URL To Test will be ignored"
+
         },
         {
             "name": "urls",
