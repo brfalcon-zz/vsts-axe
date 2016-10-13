@@ -40,14 +40,7 @@
             "helpMarkDown": "List of comma separated urls to test."
         },
         
-        {
-            "name": "browser",
-            "type": "string",
-            "label": "Browser used to render pages",
-            "defaultValue": "phantonjs",
-            "helpMarkDown": "Allowed values phantonjs, ie, ff, chrome",
-            "required": true
-        },
+        
         {
             "name": "tags",
             "type": "string",
@@ -59,7 +52,7 @@
     ],
     "execution": {
         "Node": {
-            "target": "assesstask.js",
+            "target": "accesstask.js",
             "argumentFormat": ""
         }
     },

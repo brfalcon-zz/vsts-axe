@@ -31,16 +31,20 @@ else {
 }
 
 // optional - no targets will concat nothing
-gt.arg(tl.getDelimitedInput('targets', ' ', false));
+gt.arg();
 gt.arg('--gruntfile');
 gt.pathArg(gruntFile);
-var urls = tl.getInput('urls', false);
-var urlfile = tl.getInput('urlfile', false);
-var browser = tl.getInput('browser', false);
-var tags = tl.getInput('tags', false);
+//tl.getInput('arguments', false)
+
+ var urls = tl.getInput('urls', false);
+ var urlfile = tl.getInput('urlfile', false);
+ var tags = tl.getInput('tags', false);
 
 
-var gruntargs =  '--urls=' + urls + ' --urlfile=' + urlfile + ' --browser=' + browser + '  --tags='  + tags + ' --force' 
+
+
+var gruntargs =  '--urls=' + urls + ' --urlfile=' + urlfile + '  --tags='  + tags + ' --force' ;
+
 
 gt.argString(gruntargs);
 gt.exec().then(function (code) {
@@ -49,3 +53,4 @@ gt.exec().then(function (code) {
     tl.debug('taskRunner fail');
     tl.setResult(tl.TaskResult.Failed, tl.loc('GruntFailed', err.message));
 });
+
