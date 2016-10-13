@@ -1,46 +1,41 @@
 module.exports = function (grunt) {
-  //	var a = 'http://www.tjsp.jus.br/Egov/Conciliacao/Default.aspx?f=2,http://www.tjsp.jus.br/EGov/Segmento/Administracao/Default.aspx?f=3'.split(',')
-  var a = grunt.option('u').split(',')
+  var urlfile = grunt.option('urlfile');
+  var tags = grunt.option('tags');
+  var urls;
+
+
+urlfile=".\\urls.txt";
+
+if(urlfile)
+{
+  var file  = grunt.file.read(urlfile);
+    urls = file.split('\r\n');
+
+}
+else
+{
+  urls = grunt.option('urls').split(',');
   
+}
+
+//var urls=a;
+
+
   // Project configuration.
   grunt.initConfig({
     "axe-webdriver": {
       PhantomJS: {
         options: {
-          browser: "phantomjs"
+          browser: "phantomjs",
+          tags:tags
         },
-        urls: [
-          'http://www.tjsp.jus.br/Egov/Conciliacao/Default.aspx?f=2', 
-          'http://www.tjsp.jus.br/EGov/Segmento/Administracao/Default.aspx?f=3'
-        ],
-        dest: "output.json",
-        junitDest: "output.xml"
-
-      },
-
-      IE: {
-        options: {
-          browser: "ie"
-        },
-        urls: [
-          'http://www.tjsp.jus.br/Egov/Conciliacao/Default.aspx?f=2', 
-          'http://www.tjsp.jus.br/EGov/Segmento/Administracao/Default.aspx?f=3'
-        ],
+        urls: urls,
         dest: "output.json",
         junitDest: "output.xml"
 
       }
-      ,
 
-      Custom: {
-        options: {
-          browser: grunt.option('browser')
-        },
-        urls: a,
-        dest: "output.json",
-        junitDest: "output.xml"
 
-      }
     },
   });
 

@@ -31,17 +31,32 @@ else {
 }
 
 // optional - no targets will concat nothing
-gt.arg(tl.getDelimitedInput('targets', ' ', false));
+gt.arg();
 gt.arg('--gruntfile');
 gt.pathArg(gruntFile);
 //tl.getInput('arguments', false)
 
-var gruntargs = '--browser=phantomjs --u=www.uol.com.br,http://www.tjsp.jus.br/Egov/Conciliacao/Default.aspx?f=2,http://www.tjsp.jus.br/EGov/Segmento/Administracao/Default.aspx?f=3 --force'
+ var urls = tl.getInput('urls', false);
+ var urlfile = tl.getInput('urlfile', false);
+ var tags = tl.getInput('tags', false);
+
+
+
+
+var gruntargs =  '--urls=' + urls + ' --urlfile=' + urlfile + '  --tags='  + tags + ' --force' ;
+
 
 gt.argString(gruntargs);
 gt.exec().then(function (code) {
+    var reportFileName = reportFileName || "output.json";
+    
+    var Report = require('./accessibilityReport.js');
+    var report = new Report(reportFileName);
+
+    report.AddNewReport(); 
     tl.setResult(tl.TaskResult.Succeeded, tl.loc('GruntReturnCode', code));
 }).fail(function (err) {
     tl.debug('taskRunner fail');
     tl.setResult(tl.TaskResult.Failed, tl.loc('GruntFailed', err.message));
 });
+
