@@ -1,33 +1,38 @@
 module.exports = function (grunt) {
-  var urlfile = grunt.option('urlfile');
-  var tags = grunt.option('tags');
+  var urlfile;
   var urls;
+  var options = {};
+
+  options.browser = "phantomjs";
 
 
+  if (grunt.option('urlfile')) {
+    urlfile = grunt.option('urlfile');
+  } 
+  else { 
+    urlfile = '' ;
+  };
 
-if(urlfile)
+
+if(grunt.option('tags'))
 {
-  var file  = grunt.file.read(urlfile);
+  options.tags=grunt.option('tags').split(',');
+}
+
+
+  if (grunt.file.isFile(urlfile)) {
+    var file = grunt.file.read(urlfile);
     urls = file.split('\r\n');
 
-}
-else
-{
-  urls = grunt.option('urls').split(',');
-  
-}
+  }
+  else {
+    urls = grunt.option('urls').split(',');
 
-//var urls=a;
-
-
-  // Project configuration.
+  }
   grunt.initConfig({
     "axe-webdriver": {
       PhantomJS: {
-        options: {
-          browser: "phantomjs",
-          tags:tags
-        },
+        options: options,
         urls: urls,
         dest: "output.json",
         junitDest: "output.xml"

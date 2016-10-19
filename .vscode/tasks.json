@@ -4,19 +4,6 @@
     "version": "0.1.0",
     "command": "grunt",
     "isShellCommand": true,
-    "args": ["--no-color"],
+    "args": ["--tag=wcag2a --urlfile=C:\\repostmp\AccessibilityChecker\\urls.txt"],
     "showOutput": "always",
-    "tasks": [
-        {
-            "taskName": "grunt-axe-webdriver",
-            "args": [
-                
-            ],
-            "isBuildCommand": false,
-            "isWatching": true,
-            "problemMatcher": [
-                "$jshint"
-            ]
-        }
-    ]
 }

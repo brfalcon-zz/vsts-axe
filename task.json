@@ -47,9 +47,10 @@
             "type": "string",
             "label": "Tags",
             "defaultValue": "",
-            "helpMarkDown": "Tags used to filter the tasks.",
+            "helpMarkDown": "Tags used to filter the tasks, separated by comma.",
             "required": false
-        }
+        },
+        
     ],
     "execution": {
         "Node": {
