@@ -92,6 +92,7 @@
         "GruntReturnCode": "Accessibility analysis exited with return code: %d",
         "GruntFailed": "Grunt failed with error: %s",
         "NpmFailed": "Npm failed with error: %s",
-        "IstanbulFailed": "Istanbul failed with error: %s"
+        "IstanbulFailed": "Istanbul failed with error: %s",
+        "ErrorSavingDocDb": "Error saving results in DocumentDB: %s"
     }
 }
