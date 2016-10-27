@@ -614,7 +614,7 @@
             "target": [
               "#_eEe"
             ],
-            "html": "<div id=\"_eEe\">Google.com.br é oferecido em: <a href=\"http://www.google.com.br/setprefs?sig=0_EtpL4QmYPOCAbO757R9PIxcfs6Y%3D&amp;hl=en&amp;source=homepage\" data-ved=\"0ahUKEwim_s_PxvvPAhUHyj4KHTxlDOoQ2ZgBCAU\">English</a> </div>",
+            "html": "<div id=\"_eEe\">Google.com.br é oferecido em: <a href=\"http://www.google.com.br/setprefs?sig=0_-m_NUqzvNU8qkXkZAukxPJGmOKQ%3D&amp;hl=en&amp;source=homepage\" data-ved=\"0ahUKEwje_ujsyfvPAhVE32MKHbKdDHQQ2ZgBCAU\">English</a> </div>",
             "impact": null,
             "any": [
               {
@@ -638,7 +638,7 @@
             "target": [
               "#_eEe > a"
             ],
-            "html": "<a href=\"http://www.google.com.br/setprefs?sig=0_EtpL4QmYPOCAbO757R9PIxcfs6Y%3D&amp;hl=en&amp;source=homepage\" data-ved=\"0ahUKEwim_s_PxvvPAhUHyj4KHTxlDOoQ2ZgBCAU\">English</a>",
+            "html": "<a href=\"http://www.google.com.br/setprefs?sig=0_-m_NUqzvNU8qkXkZAukxPJGmOKQ%3D&amp;hl=en&amp;source=homepage\" data-ved=\"0ahUKEwje_ujsyfvPAhVE32MKHbKdDHQQ2ZgBCAU\">English</a>",
             "impact": null,
             "any": [
               {
@@ -758,7 +758,7 @@
             "target": [
               "#fehl"
             ],
-            "html": "<a href=\"http://www.google.com.br/setprefdomain?prefdom=US&amp;sig=__nZ6LqjvolfWxvPtb_eXnpmV82r8%3D\" id=\"fehl\">Google.com</a>",
+            "html": "<a href=\"http://www.google.com.br/setprefdomain?prefdom=US&amp;sig=__WEsbWw77RvtPaAiH5Wj9NK6KRLw%3D\" id=\"fehl\">Google.com</a>",
             "impact": null,
             "any": [
               {
@@ -1204,7 +1204,7 @@
             "target": [
               "#gb_70"
             ],
-            "html": "<a target=\"_top\" href=\"https://accounts.google.com/ServiceLogin?hl=pt-BR&amp;passive=true&amp;continue=http://www.google.com.br/%3Fgfe_rd%3Dcr%26ei%3DAj8SWOHYGPCp8wfAgrXYBg\" onclick=\"gbar.logger.il(9,{l:'i'})\" id=\"gb_70\" class=\"gbgt\" style=\"\">",
+            "html": "<a target=\"_top\" href=\"https://accounts.google.com/ServiceLogin?hl=pt-BR&amp;passive=true&amp;continue=http://www.google.com.br/%3Fgfe_rd%3Dcr%26ei%3DY0ISWIjILZHt8weShZbYBg\" onclick=\"gbar.logger.il(9,{l:'i'})\" id=\"gb_70\" class=\"gbgt\" style=\"\">",
             "impact": null,
             "any": [
               {
@@ -1438,7 +1438,7 @@
             "target": [
               "#_eEe"
             ],
-            "html": "<div id=\"_eEe\">Google.com.br é oferecido em: <a href=\"http://www.google.com.br/setprefs?sig=0_EtpL4QmYPOCAbO757R9PIxcfs6Y%3D&amp;hl=en&amp;source=homepage\" data-ved=\"0ahUKEwim_s_PxvvPAhUHyj4KHTxlDOoQ2ZgBCAU\">English</a> </div>",
+            "html": "<div id=\"_eEe\">Google.com.br é oferecido em: <a href=\"http://www.google.com.br/setprefs?sig=0_-m_NUqzvNU8qkXkZAukxPJGmOKQ%3D&amp;hl=en&amp;source=homepage\" data-ved=\"0ahUKEwje_ujsyfvPAhVE32MKHbKdDHQQ2ZgBCAU\">English</a> </div>",
             "impact": null,
             "any": [
               {
@@ -1492,7 +1492,7 @@
             "target": [
               "#fehl"
             ],
-            "html": "<a href=\"http://www.google.com.br/setprefdomain?prefdom=US&amp;sig=__nZ6LqjvolfWxvPtb_eXnpmV82r8%3D\" id=\"fehl\">Google.com</a>",
+            "html": "<a href=\"http://www.google.com.br/setprefdomain?prefdom=US&amp;sig=__WEsbWw77RvtPaAiH5Wj9NK6KRLw%3D\" id=\"fehl\">Google.com</a>",
             "impact": null,
             "any": [
               {
@@ -1955,7 +1955,7 @@
             "target": [
               "#gb_70"
             ],
-            "html": "<a target=\"_top\" href=\"https://accounts.google.com/ServiceLogin?hl=pt-BR&amp;passive=true&amp;continue=http://www.google.com.br/%3Fgfe_rd%3Dcr%26ei%3DAj8SWOHYGPCp8wfAgrXYBg\" onclick=\"gbar.logger.il(9,{l:'i'})\" id=\"gb_70\" class=\"gbgt\" style=\"\">",
+            "html": "<a target=\"_top\" href=\"https://accounts.google.com/ServiceLogin?hl=pt-BR&amp;passive=true&amp;continue=http://www.google.com.br/%3Fgfe_rd%3Dcr%26ei%3DY0ISWIjILZHt8weShZbYBg\" onclick=\"gbar.logger.il(9,{l:'i'})\" id=\"gb_70\" class=\"gbgt\" style=\"\">",
             "impact": null,
             "any": [
               {
@@ -2059,7 +2059,7 @@
             "target": [
               "#_eEe > a"
             ],
-            "html": "<a href=\"http://www.google.com.br/setprefs?sig=0_EtpL4QmYPOCAbO757R9PIxcfs6Y%3D&amp;hl=en&amp;source=homepage\" data-ved=\"0ahUKEwim_s_PxvvPAhUHyj4KHTxlDOoQ2ZgBCAU\">English</a>",
+            "html": "<a href=\"http://www.google.com.br/setprefs?sig=0_-m_NUqzvNU8qkXkZAukxPJGmOKQ%3D&amp;hl=en&amp;source=homepage\" data-ved=\"0ahUKEwje_ujsyfvPAhVE32MKHbKdDHQQ2ZgBCAU\">English</a>",
             "impact": null,
             "any": [
               {
@@ -2189,7 +2189,7 @@
             "target": [
               "#fehl"
             ],
-            "html": "<a href=\"http://www.google.com.br/setprefdomain?prefdom=US&amp;sig=__nZ6LqjvolfWxvPtb_eXnpmV82r8%3D\" id=\"fehl\">Google.com</a>",
+            "html": "<a href=\"http://www.google.com.br/setprefdomain?prefdom=US&amp;sig=__WEsbWw77RvtPaAiH5Wj9NK6KRLw%3D\" id=\"fehl\">Google.com</a>",
             "impact": null,
             "any": [
               {
