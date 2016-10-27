@@ -2,11 +2,862 @@
   {
     "violations": [
       {
+        "id": "color-contrast",
+        "description": "Ensures the contrast between foreground and background colors meets WCAG 2 AA contrast ratio thresholds",
+        "help": "Elements must have sufficient color contrast",
+        "helpUrl": "https://dequeuniversity.com/rules/axe/1.1/color-contrast",
+        "impact": "critical",
+        "tags": [
+          "wcag2aa",
+          "wcag143"
+        ],
+        "nodes": [
+          {
+            "target": [
+              "#gbztms1"
+            ],
+            "html": "<span id=\"gbztms1\" style=\"\">Mais</span>",
+            "impact": "critical",
+            "any": [
+              {
+                "id": "color-contrast",
+                "impact": "critical",
+                "message": "Element has insufficient color contrast of 1.61 (foreground color: #cccccc, background color: #ffffff, font size: 9.8pt, font weight: normal)",
+                "data": {
+                  "fgColor": "#cccccc",
+                  "bgColor": "#ffffff",
+                  "contrastRatio": "1.61",
+                  "fontSize": "9.8pt",
+                  "fontWeight": "normal"
+                },
+                "relatedNodes": []
+              }
+            ],
+            "all": [],
+            "none": []
+          }
+        ]
+      }
+    ],
+    "passes": [
+      {
+        "id": "aria-allowed-attr",
+        "description": "Ensures ARIA attributes are allowed for an element's role",
+        "help": "Elements must only use allowed ARIA attributes",
+        "helpUrl": "https://dequeuniversity.com/rules/axe/1.1/aria-allowed-attr",
+        "impact": null,
+        "tags": [
+          "wcag2a",
+          "wcag411"
+        ],
+        "nodes": [
+          {
+            "target": [
+              "#gbztm"
+            ],
+            "html": "<a class=\"gbgt\" id=\"gbztm\" href=\"https://www.google.com.br/intl/pt-BR/options/\" onclick=\"gbar.tg(event,this)\" aria-haspopup=\"true\" aria-owns=\"gbd\" style=\"\">",
+            "impact": null,
+            "any": [
+              {
+                "id": "aria-allowed-attr",
+                "impact": "critical",
+                "message": "ARIA attributes are used correctly for the defined role",
+                "data": null,
+                "relatedNodes": []
+              }
+            ],
+            "all": [],
+            "none": []
+          },
+          {
+            "target": [
+              "#gbg5"
+            ],
+            "html": "<a class=\"gbgt\" id=\"gbg5\" href=\"http://www.google.com.br/preferences?hl=pt-BR\" title=\"Opções\" onclick=\"gbar.tg(event,this)\" aria-haspopup=\"true\" aria-owns=\"gbd5\"><span class=\"gbtb2\"></span><span id=\"gbgs5\" class=\"gbts\"><span id=\"gbi5\"></span></span></a>",
+            "impact": null,
+            "any": [
+              {
+                "id": "aria-allowed-attr",
+                "impact": "critical",
+                "message": "ARIA attributes are used correctly for the defined role",
+                "data": null,
+                "relatedNodes": []
+              }
+            ],
+            "all": [],
+            "none": []
+          }
+        ]
+      },
+      {
+        "id": "aria-valid-attr-value",
+        "description": "Ensures all ARIA attributes have valid values",
+        "help": "ARIA attributes must conform to valid values",
+        "helpUrl": "https://dequeuniversity.com/rules/axe/1.1/aria-valid-attr-value",
+        "impact": null,
+        "tags": [
+          "wcag2a",
+          "wcag411"
+        ],
+        "nodes": [
+          {
+            "target": [
+              "#gbztm"
+            ],
+            "html": "<a class=\"gbgt\" id=\"gbztm\" href=\"https://www.google.com.br/intl/pt-BR/options/\" onclick=\"gbar.tg(event,this)\" aria-haspopup=\"true\" aria-owns=\"gbd\" style=\"\">",
+            "impact": null,
+            "any": [
+              {
+                "id": "aria-valid-attr-value",
+                "impact": "critical",
+                "message": "ARIA attribute values are valid",
+                "data": null,
+                "relatedNodes": []
+              }
+            ],
+            "all": [],
+            "none": []
+          },
+          {
+            "target": [
+              "#gbg5"
+            ],
+            "html": "<a class=\"gbgt\" id=\"gbg5\" href=\"http://www.google.com.br/preferences?hl=pt-BR\" title=\"Opções\" onclick=\"gbar.tg(event,this)\" aria-haspopup=\"true\" aria-owns=\"gbd5\"><span class=\"gbtb2\"></span><span id=\"gbgs5\" class=\"gbts\"><span id=\"gbi5\"></span></span></a>",
+            "impact": null,
+            "any": [
+              {
+                "id": "aria-valid-attr-value",
+                "impact": "critical",
+                "message": "ARIA attribute values are valid",
+                "data": null,
+                "relatedNodes": []
+              }
+            ],
+            "all": [],
+            "none": []
+          }
+        ]
+      },
+      {
+        "id": "aria-valid-attr",
+        "description": "Ensures attributes that begin with aria- are valid ARIA attributes",
+        "help": "ARIA attributes must conform to valid names",
+        "helpUrl": "https://dequeuniversity.com/rules/axe/1.1/aria-valid-attr",
+        "impact": null,
+        "tags": [
+          "wcag2a",
+          "wcag411"
+        ],
+        "nodes": [
+          {
+            "target": [
+              "#gbztm"
+            ],
+            "html": "<a class=\"gbgt\" id=\"gbztm\" href=\"https://www.google.com.br/intl/pt-BR/options/\" onclick=\"gbar.tg(event,this)\" aria-haspopup=\"true\" aria-owns=\"gbd\" style=\"\">",
+            "impact": null,
+            "any": [
+              {
+                "id": "aria-valid-attr",
+                "impact": "critical",
+                "message": "ARIA attribute name are valid",
+                "data": null,
+                "relatedNodes": []
+              }
+            ],
+            "all": [],
+            "none": []
+          },
+          {
+            "target": [
+              "#gbg5"
+            ],
+            "html": "<a class=\"gbgt\" id=\"gbg5\" href=\"http://www.google.com.br/preferences?hl=pt-BR\" title=\"Opções\" onclick=\"gbar.tg(event,this)\" aria-haspopup=\"true\" aria-owns=\"gbd5\"><span class=\"gbtb2\"></span><span id=\"gbgs5\" class=\"gbts\"><span id=\"gbi5\"></span></span></a>",
+            "impact": null,
+            "any": [
+              {
+                "id": "aria-valid-attr",
+                "impact": "critical",
+                "message": "ARIA attribute name are valid",
+                "data": null,
+                "relatedNodes": []
+              }
+            ],
+            "all": [],
+            "none": []
+          }
+        ]
+      },
+      {
+        "id": "button-name",
+        "description": "Ensures buttons have discernible text",
+        "help": "Buttons must have discernible text",
+        "helpUrl": "https://dequeuniversity.com/rules/axe/1.1/button-name",
+        "impact": null,
+        "tags": [
+          "wcag2a",
+          "wcag412",
+          "section508",
+          "section508a"
+        ],
+        "nodes": [
+          {
+            "target": [
+              "body > center > form > table > tbody > tr > td:nth-of-type(2) > span:nth-of-type(1) > .lsbb > .lsb"
+            ],
+            "html": "<input class=\"lsb\" value=\"Pesquisa Google\" name=\"btnG\" type=\"submit\">",
+            "impact": null,
+            "any": [
+              {
+                "id": "non-empty-if-present",
+                "impact": "critical",
+                "message": "Element has a non-empty value attribute",
+                "data": "Pesquisa Google",
+                "relatedNodes": []
+              }
+            ],
+            "all": [],
+            "none": [
+              {
+                "id": "focusable-no-name",
+                "impact": "serious",
+                "message": "Element is not in tab order or has accessible text",
+                "data": null,
+                "relatedNodes": []
+              }
+            ]
+          },
+          {
+            "target": [
+              "body > center > form > table > tbody > tr > td:nth-of-type(2) > span:nth-of-type(2) > .lsbb > .lsb"
+            ],
+            "html": "<input class=\"lsb\" value=\"Estou com sorte\" name=\"btnI\" onclick=\"if(this.form.q.value)this.checked=1; else top.location='/doodles/'\" type=\"submit\">",
+            "impact": null,
+            "any": [
+              {
+                "id": "non-empty-if-present",
+                "impact": "critical",
+                "message": "Element has a non-empty value attribute",
+                "data": "Estou com sorte",
+                "relatedNodes": []
+              }
+            ],
+            "all": [],
+            "none": [
+              {
+                "id": "focusable-no-name",
+                "impact": "serious",
+                "message": "Element is not in tab order or has accessible text",
+                "data": null,
+                "relatedNodes": []
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "bypass",
+        "description": "Ensures each page has at least one mechanism for a user to bypass navigation and jump straight to the content",
+        "help": "Page must have means to bypass repeated blocks",
+        "helpUrl": "https://dequeuniversity.com/rules/axe/1.1/bypass",
+        "impact": null,
+        "tags": [
+          "wcag2a",
+          "wcag241",
+          "section508",
+          "section508o"
+        ],
+        "nodes": [
+          {
+            "target": [
+              "html"
+            ],
+            "html": "<html itemscope=\"\" itemtype=\"http://schema.org/WebPage\" lang=\"pt\" style=\"\">",
+            "impact": null,
+            "any": [
+              {
+                "id": "header-present",
+                "impact": "moderate",
+                "message": "Page has a header",
+                "data": null,
+                "relatedNodes": []
+              }
+            ],
+            "all": [],
+            "none": []
+          }
+        ]
+      },
+      {
+        "id": "color-contrast",
+        "description": "Ensures the contrast between foreground and background colors meets WCAG 2 AA contrast ratio thresholds",
+        "help": "Elements must have sufficient color contrast",
+        "helpUrl": "https://dequeuniversity.com/rules/axe/1.1/color-contrast",
+        "impact": null,
+        "tags": [
+          "wcag2aa",
+          "wcag143"
+        ],
+        "nodes": [
+          {
+            "target": [
+              "#gb_119 > .gbts"
+            ],
+            "html": "<span class=\"gbts\" style=\"\">Google+</span>",
+            "impact": null,
+            "any": [
+              {
+                "id": "color-contrast",
+                "impact": "critical",
+                "message": "Element has sufficient color contrast of 8.58",
+                "data": {
+                  "fgColor": "#cccccc",
+                  "bgColor": "#2d2d2d",
+                  "contrastRatio": "8.58",
+                  "fontSize": "9.8pt",
+                  "fontWeight": "normal"
+                },
+                "relatedNodes": []
+              }
+            ],
+            "all": [],
+            "none": []
+          },
+          {
+            "target": [
+              "#gb_1 > .gbts"
+            ],
+            "html": "<span class=\"gbts\" style=\"\">Pesquisa</span>",
+            "impact": null,
+            "any": [
+              {
+                "id": "color-contrast",
+                "impact": "critical",
+                "message": "Element has sufficient color contrast of 13.77",
+                "data": {
+                  "fgColor": "#ffffff",
+                  "bgColor": "#2d2d2d",
+                  "contrastRatio": "13.77",
+                  "fontSize": "9.8pt",
+                  "fontWeight": "bold"
+                },
+                "relatedNodes": []
+              }
+            ],
+            "all": [],
+            "none": []
+          },
+          {
+            "target": [
+              "#gb_2 > .gbts"
+            ],
+            "html": "<span class=\"gbts\" style=\"\">Imagens</span>",
+            "impact": null,
+            "any": [
+              {
+                "id": "color-contrast",
+                "impact": "critical",
+                "message": "Element has sufficient color contrast of 8.58",
+                "data": {
+                  "fgColor": "#cccccc",
+                  "bgColor": "#2d2d2d",
+                  "contrastRatio": "8.58",
+                  "fontSize": "9.8pt",
+                  "fontWeight": "normal"
+                },
+                "relatedNodes": []
+              }
+            ],
+            "all": [],
+            "none": []
+          },
+          {
+            "target": [
+              "#gb_8 > .gbts"
+            ],
+            "html": "<span class=\"gbts\" style=\"\">Maps</span>",
+            "impact": null,
+            "any": [
+              {
+                "id": "color-contrast",
+                "impact": "critical",
+                "message": "Element has sufficient color contrast of 8.58",
+                "data": {
+                  "fgColor": "#cccccc",
+                  "bgColor": "#2d2d2d",
+                  "contrastRatio": "8.58",
+                  "fontSize": "9.8pt",
+                  "fontWeight": "normal"
+                },
+                "relatedNodes": []
+              }
+            ],
+            "all": [],
+            "none": []
+          },
+          {
+            "target": [
+              "#gb_78 > .gbts"
+            ],
+            "html": "<span class=\"gbts\" style=\"\">Play</span>",
+            "impact": null,
+            "any": [
+              {
+                "id": "color-contrast",
+                "impact": "critical",
+                "message": "Element has sufficient color contrast of 8.58",
+                "data": {
+                  "fgColor": "#cccccc",
+                  "bgColor": "#2d2d2d",
+                  "contrastRatio": "8.58",
+                  "fontSize": "9.8pt",
+                  "fontWeight": "normal"
+                },
+                "relatedNodes": []
+              }
+            ],
+            "all": [],
+            "none": []
+          },
+          {
+            "target": [
+              "#gb_36 > .gbts"
+            ],
+            "html": "<span class=\"gbts\" style=\"\">YouTube</span>",
+            "impact": null,
+            "any": [
+              {
+                "id": "color-contrast",
+                "impact": "critical",
+                "message": "Element has sufficient color contrast of 8.58",
+                "data": {
+                  "fgColor": "#cccccc",
+                  "bgColor": "#2d2d2d",
+                  "contrastRatio": "8.58",
+                  "fontSize": "9.8pt",
+                  "fontWeight": "normal"
+                },
+                "relatedNodes": []
+              }
+            ],
+            "all": [],
+            "none": []
+          },
+          {
+            "target": [
+              "#gb_5 > .gbts"
+            ],
+            "html": "<span class=\"gbts\" style=\"\">Notícias</span>",
+            "impact": null,
+            "any": [
+              {
+                "id": "color-contrast",
+                "impact": "critical",
+                "message": "Element has sufficient color contrast of 8.58",
+                "data": {
+                  "fgColor": "#cccccc",
+                  "bgColor": "#2d2d2d",
+                  "contrastRatio": "8.58",
+                  "fontSize": "9.8pt",
+                  "fontWeight": "normal"
+                },
+                "relatedNodes": []
+              }
+            ],
+            "all": [],
+            "none": []
+          },
+          {
+            "target": [
+              "#gb_23 > .gbts"
+            ],
+            "html": "<span class=\"gbts\" style=\"\">Gmail</span>",
+            "impact": null,
+            "any": [
+              {
+                "id": "color-contrast",
+                "impact": "critical",
+                "message": "Unable to determine contrast ratio",
+                "data": null,
+                "relatedNodes": []
+              }
+            ],
+            "all": [],
+            "none": []
+          },
+          {
+            "target": [
+              "#gbi4s1"
+            ],
+            "html": "<span id=\"gbi4s1\" style=\"\">Fazer login</span>",
+            "impact": null,
+            "any": [
+              {
+                "id": "color-contrast",
+                "impact": "critical",
+                "message": "Unable to determine contrast ratio",
+                "data": null,
+                "relatedNodes": []
+              }
+            ],
+            "all": [],
+            "none": []
+          },
+          {
+            "target": [
+              "#hplogo > div"
+            ],
+            "html": "<div style=\"color: rgb(119, 119, 119); font-size: 16px; font-weight: bold; position: relative; top: 70px; left: 218px;\" nowrap=\"\">Brasil</div>",
+            "impact": null,
+            "any": [
+              {
+                "id": "color-contrast",
+                "impact": "critical",
+                "message": "Unable to determine contrast ratio",
+                "data": null,
+                "relatedNodes": []
+              }
+            ],
+            "all": [],
+            "none": []
+          },
+          {
+            "target": [
+              "body > center > form > table > tbody > tr > td:nth-of-type(2) > div > div > .lst.tiah"
+            ],
+            "html": "<input style=\"color: rgb(0, 0, 0); margin: 0px; padding: 5px 38px 0px 6px; vertical-align: top; outline: none;\" autocomplete=\"off\" class=\"lst tiah\" value=\"\" title=\"Pesquisa Google\" maxlength=\"2048\" name=\"q\" size=\"57\" dir=\"ltr\" spellcheck=\"false\">",
+            "impact": null,
+            "any": [
+              {
+                "id": "color-contrast",
+                "impact": "critical",
+                "message": "Unable to determine contrast ratio",
+                "data": null,
+                "relatedNodes": []
+              }
+            ],
+            "all": [],
+            "none": []
+          },
+          {
+            "target": [
+              "body > center > form > table > tbody > tr > td:nth-of-type(2) > span:nth-of-type(1) > .lsbb > .lsb"
+            ],
+            "html": "<input class=\"lsb\" value=\"Pesquisa Google\" name=\"btnG\" type=\"submit\">",
+            "impact": null,
+            "any": [
+              {
+                "id": "color-contrast",
+                "impact": "critical",
+                "message": "Unable to determine contrast ratio",
+                "data": null,
+                "relatedNodes": []
+              }
+            ],
+            "all": [],
+            "none": []
+          },
+          {
+            "target": [
+              "body > center > form > table > tbody > tr > td:nth-of-type(2) > span:nth-of-type(2) > .lsbb > .lsb"
+            ],
+            "html": "<input class=\"lsb\" value=\"Estou com sorte\" name=\"btnI\" onclick=\"if(this.form.q.value)this.checked=1; else top.location='/doodles/'\" type=\"submit\">",
+            "impact": null,
+            "any": [
+              {
+                "id": "color-contrast",
+                "impact": "critical",
+                "message": "Unable to determine contrast ratio",
+                "data": null,
+                "relatedNodes": []
+              }
+            ],
+            "all": [],
+            "none": []
+          },
+          {
+            "target": [
+              "body > center > form > table > tbody > tr > .fl.sblc > a:nth-of-type(1)"
+            ],
+            "html": "<a href=\"/advanced_search?hl=pt&amp;authuser=0\">Pesquisa avançada</a>",
+            "impact": null,
+            "any": [
+              {
+                "id": "color-contrast",
+                "impact": "critical",
+                "message": "Unable to determine contrast ratio",
+                "data": null,
+                "relatedNodes": []
+              }
+            ],
+            "all": [],
+            "none": []
+          },
+          {
+            "target": [
+              "body > center > form > table > tbody > tr > .fl.sblc > a:nth-of-type(2)"
+            ],
+            "html": "<a href=\"/language_tools?hl=pt&amp;authuser=0\">Ferramentas de idioma</a>",
+            "impact": null,
+            "any": [
+              {
+                "id": "color-contrast",
+                "impact": "critical",
+                "message": "Unable to determine contrast ratio",
+                "data": null,
+                "relatedNodes": []
+              }
+            ],
+            "all": [],
+            "none": []
+          },
+          {
+            "target": [
+              "#_eEe"
+            ],
+            "html": "<div id=\"_eEe\">Google.com.br é oferecido em: <a href=\"http://www.google.com.br/setprefs?sig=0_EtpL4QmYPOCAbO757R9PIxcfs6Y%3D&amp;hl=en&amp;source=homepage\" data-ved=\"0ahUKEwim_s_PxvvPAhUHyj4KHTxlDOoQ2ZgBCAU\">English</a> </div>",
+            "impact": null,
+            "any": [
+              {
+                "id": "color-contrast",
+                "impact": "critical",
+                "message": "Element has sufficient color contrast of 21.00",
+                "data": {
+                  "fgColor": "#000000",
+                  "bgColor": "#ffffff",
+                  "contrastRatio": "21.00",
+                  "fontSize": "9.8pt",
+                  "fontWeight": "normal"
+                },
+                "relatedNodes": []
+              }
+            ],
+            "all": [],
+            "none": []
+          },
+          {
+            "target": [
+              "#_eEe > a"
+            ],
+            "html": "<a href=\"http://www.google.com.br/setprefs?sig=0_EtpL4QmYPOCAbO757R9PIxcfs6Y%3D&amp;hl=en&amp;source=homepage\" data-ved=\"0ahUKEwim_s_PxvvPAhUHyj4KHTxlDOoQ2ZgBCAU\">English</a>",
+            "impact": null,
+            "any": [
+              {
+                "id": "color-contrast",
+                "impact": "critical",
+                "message": "Element has sufficient color contrast of 10.63",
+                "data": {
+                  "fgColor": "#1111cc",
+                  "bgColor": "#ffffff",
+                  "contrastRatio": "10.63",
+                  "fontSize": "9.8pt",
+                  "fontWeight": "normal"
+                },
+                "relatedNodes": []
+              }
+            ],
+            "all": [],
+            "none": []
+          },
+          {
+            "target": [
+              "#fll > a:nth-of-type(1)"
+            ],
+            "html": "<a href=\"/intl/pt-BR/ads/\">Soluções de publicidade</a>",
+            "impact": null,
+            "any": [
+              {
+                "id": "color-contrast",
+                "impact": "critical",
+                "message": "Element has sufficient color contrast of 10.63",
+                "data": {
+                  "fgColor": "#1111cc",
+                  "bgColor": "#ffffff",
+                  "contrastRatio": "10.63",
+                  "fontSize": "9.8pt",
+                  "fontWeight": "normal"
+                },
+                "relatedNodes": []
+              }
+            ],
+            "all": [],
+            "none": []
+          },
+          {
+            "target": [
+              "#fll > a:nth-of-type(2)"
+            ],
+            "html": "<a href=\"/services/\">Soluções empresariais</a>",
+            "impact": null,
+            "any": [
+              {
+                "id": "color-contrast",
+                "impact": "critical",
+                "message": "Element has sufficient color contrast of 10.63",
+                "data": {
+                  "fgColor": "#1111cc",
+                  "bgColor": "#ffffff",
+                  "contrastRatio": "10.63",
+                  "fontSize": "9.8pt",
+                  "fontWeight": "normal"
+                },
+                "relatedNodes": []
+              }
+            ],
+            "all": [],
+            "none": []
+          },
+          {
+            "target": [
+              "#fll > a:nth-of-type(3)"
+            ],
+            "html": "<a href=\"https://plus.google.com/107558061013247958406\" rel=\"publisher\">+Google</a>",
+            "impact": null,
+            "any": [
+              {
+                "id": "color-contrast",
+                "impact": "critical",
+                "message": "Element has sufficient color contrast of 10.63",
+                "data": {
+                  "fgColor": "#1111cc",
+                  "bgColor": "#ffffff",
+                  "contrastRatio": "10.63",
+                  "fontSize": "9.8pt",
+                  "fontWeight": "normal"
+                },
+                "relatedNodes": []
+              }
+            ],
+            "all": [],
+            "none": []
+          },
+          {
+            "target": [
+              "#fll > a:nth-of-type(4)"
+            ],
+            "html": "<a href=\"/intl/pt-BR/about.html\">Sobre o Google</a>",
+            "impact": null,
+            "any": [
+              {
+                "id": "color-contrast",
+                "impact": "critical",
+                "message": "Element has sufficient color contrast of 10.63",
+                "data": {
+                  "fgColor": "#1111cc",
+                  "bgColor": "#ffffff",
+                  "contrastRatio": "10.63",
+                  "fontSize": "9.8pt",
+                  "fontWeight": "normal"
+                },
+                "relatedNodes": []
+              }
+            ],
+            "all": [],
+            "none": []
+          },
+          {
+            "target": [
+              "#fehl"
+            ],
+            "html": "<a href=\"http://www.google.com.br/setprefdomain?prefdom=US&amp;sig=__nZ6LqjvolfWxvPtb_eXnpmV82r8%3D\" id=\"fehl\">Google.com</a>",
+            "impact": null,
+            "any": [
+              {
+                "id": "color-contrast",
+                "impact": "critical",
+                "message": "Element has sufficient color contrast of 10.63",
+                "data": {
+                  "fgColor": "#1111cc",
+                  "bgColor": "#ffffff",
+                  "contrastRatio": "10.63",
+                  "fontSize": "9.8pt",
+                  "fontWeight": "normal"
+                },
+                "relatedNodes": []
+              }
+            ],
+            "all": [],
+            "none": []
+          },
+          {
+            "target": [
+              "#footer > p"
+            ],
+            "html": "<p style=\"color:#767676;font-size:8pt\">© 2016 - <a href=\"/intl/pt-BR/policies/privacy/\">Privacidade</a> - <a href=\"/intl/pt-BR/policies/terms/\">Termos</a></p>",
+            "impact": null,
+            "any": [
+              {
+                "id": "color-contrast",
+                "impact": "critical",
+                "message": "Element has sufficient color contrast of 4.54",
+                "data": {
+                  "fgColor": "#767676",
+                  "bgColor": "#ffffff",
+                  "contrastRatio": "4.54",
+                  "fontSize": "8.3pt",
+                  "fontWeight": "normal"
+                },
+                "relatedNodes": []
+              }
+            ],
+            "all": [],
+            "none": []
+          },
+          {
+            "target": [
+              "#footer > p > a:nth-of-type(1)"
+            ],
+            "html": "<a href=\"/intl/pt-BR/policies/privacy/\">Privacidade</a>",
+            "impact": null,
+            "any": [
+              {
+                "id": "color-contrast",
+                "impact": "critical",
+                "message": "Element has sufficient color contrast of 10.63",
+                "data": {
+                  "fgColor": "#1111cc",
+                  "bgColor": "#ffffff",
+                  "contrastRatio": "10.63",
+                  "fontSize": "8.3pt",
+                  "fontWeight": "normal"
+                },
+                "relatedNodes": []
+              }
+            ],
+            "all": [],
+            "none": []
+          },
+          {
+            "target": [
+              "#footer > p > a:nth-of-type(2)"
+            ],
+            "html": "<a href=\"/intl/pt-BR/policies/terms/\">Termos</a>",
+            "impact": null,
+            "any": [
+              {
+                "id": "color-contrast",
+                "impact": "critical",
+                "message": "Element has sufficient color contrast of 10.63",
+                "data": {
+                  "fgColor": "#1111cc",
+                  "bgColor": "#ffffff",
+                  "contrastRatio": "10.63",
+                  "fontSize": "8.3pt",
+                  "fontWeight": "normal"
+                },
+                "relatedNodes": []
+              }
+            ],
+            "all": [],
+            "none": []
+          }
+        ]
+      },
+      {
         "id": "document-title",
         "description": "Ensures each HTML document contains a non-empty <title> element",
         "help": "Documents must have <title> element to aid in navigation",
         "helpUrl": "https://dequeuniversity.com/rules/axe/1.1/document-title",
-        "impact": "moderate",
+        "impact": null,
         "tags": [
           "wcag2a",
           "wcag242"
@@ -16,14 +867,675 @@
             "target": [
               "html"
             ],
-            "html": "<html>",
-            "impact": "moderate",
+            "html": "<html itemscope=\"\" itemtype=\"http://schema.org/WebPage\" lang=\"pt\" style=\"\">",
+            "impact": null,
             "any": [
               {
                 "id": "doc-has-title",
                 "impact": "moderate",
-                "message": "Document does not have a non-empty <title> element",
+                "message": "Document has a non-empty <title> element",
                 "data": null,
+                "relatedNodes": []
+              }
+            ],
+            "all": [],
+            "none": []
+          }
+        ]
+      },
+      {
+        "id": "duplicate-id",
+        "description": "Ensures every id attribute value is unique",
+        "help": "id attribute value must be unique",
+        "helpUrl": "https://dequeuniversity.com/rules/axe/1.1/duplicate-id",
+        "impact": null,
+        "tags": [
+          "wcag2a",
+          "wcag411"
+        ],
+        "nodes": [
+          {
+            "target": [
+              "#mngb"
+            ],
+            "html": "<div id=\"mngb\">",
+            "impact": null,
+            "any": [
+              {
+                "id": "duplicate-id",
+                "impact": "critical",
+                "message": "Document has no elements that share the same id attribute",
+                "data": "mngb",
+                "relatedNodes": []
+              }
+            ],
+            "all": [],
+            "none": []
+          },
+          {
+            "target": [
+              "#gb"
+            ],
+            "html": "<div id=\"gb\">",
+            "impact": null,
+            "any": [
+              {
+                "id": "duplicate-id",
+                "impact": "critical",
+                "message": "Document has no elements that share the same id attribute",
+                "data": "gb",
+                "relatedNodes": []
+              }
+            ],
+            "all": [],
+            "none": []
+          },
+          {
+            "target": [
+              "#gbw"
+            ],
+            "html": "<div id=\"gbw\">",
+            "impact": null,
+            "any": [
+              {
+                "id": "duplicate-id",
+                "impact": "critical",
+                "message": "Document has no elements that share the same id attribute",
+                "data": "gbw",
+                "relatedNodes": []
+              }
+            ],
+            "all": [],
+            "none": []
+          },
+          {
+            "target": [
+              "#gbz"
+            ],
+            "html": "<div id=\"gbz\" style=\"\">",
+            "impact": null,
+            "any": [
+              {
+                "id": "duplicate-id",
+                "impact": "critical",
+                "message": "Document has no elements that share the same id attribute",
+                "data": "gbz",
+                "relatedNodes": []
+              }
+            ],
+            "all": [],
+            "none": []
+          },
+          {
+            "target": [
+              "#gbzc"
+            ],
+            "html": "<ol id=\"gbzc\" class=\"gbtc\" style=\"\">",
+            "impact": null,
+            "any": [
+              {
+                "id": "duplicate-id",
+                "impact": "critical",
+                "message": "Document has no elements that share the same id attribute",
+                "data": "gbzc",
+                "relatedNodes": []
+              }
+            ],
+            "all": [],
+            "none": []
+          },
+          {
+            "target": [
+              "#gb_119"
+            ],
+            "html": "<a onclick=\"gbar.logger.il(1,{t:119});\" class=\"gbzt\" id=\"gb_119\" href=\"https://plus.google.com/?gpsrc=ogpy0&amp;tab=wX\" style=\"\"><span class=\"gbtb2\"></span><span class=\"gbts\" style=\"\">Google+</span></a>",
+            "impact": null,
+            "any": [
+              {
+                "id": "duplicate-id",
+                "impact": "critical",
+                "message": "Document has no elements that share the same id attribute",
+                "data": "gb_119",
+                "relatedNodes": []
+              }
+            ],
+            "all": [],
+            "none": []
+          },
+          {
+            "target": [
+              "#gb_1"
+            ],
+            "html": "<a onclick=\"gbar.logger.il(1,{t:1});\" class=\"gbzt gbz0l gbp1\" id=\"gb_1\" href=\"https://www.google.com.br/webhp?tab=ww\" style=\"\"><span class=\"gbtb2\"></span><span class=\"gbts\" style=\"\">Pesquisa</span></a>",
+            "impact": null,
+            "any": [
+              {
+                "id": "duplicate-id",
+                "impact": "critical",
+                "message": "Document has no elements that share the same id attribute",
+                "data": "gb_1",
+                "relatedNodes": []
+              }
+            ],
+            "all": [],
+            "none": []
+          },
+          {
+            "target": [
+              "#gb_2"
+            ],
+            "html": "<a onclick=\"gbar.logger.il(1,{t:2});\" class=\"gbzt\" id=\"gb_2\" href=\"http://www.google.com.br/imghp?hl=pt-BR&amp;tab=wi\" style=\"\"><span class=\"gbtb2\"></span><span class=\"gbts\" style=\"\">Imagens</span></a>",
+            "impact": null,
+            "any": [
+              {
+                "id": "duplicate-id",
+                "impact": "critical",
+                "message": "Document has no elements that share the same id attribute",
+                "data": "gb_2",
+                "relatedNodes": []
+              }
+            ],
+            "all": [],
+            "none": []
+          },
+          {
+            "target": [
+              "#gb_8"
+            ],
+            "html": "<a onclick=\"gbar.logger.il(1,{t:8});\" class=\"gbzt\" id=\"gb_8\" href=\"http://maps.google.com.br/maps?hl=pt-BR&amp;tab=wl\" style=\"\"><span class=\"gbtb2\"></span><span class=\"gbts\" style=\"\">Maps</span></a>",
+            "impact": null,
+            "any": [
+              {
+                "id": "duplicate-id",
+                "impact": "critical",
+                "message": "Document has no elements that share the same id attribute",
+                "data": "gb_8",
+                "relatedNodes": []
+              }
+            ],
+            "all": [],
+            "none": []
+          },
+          {
+            "target": [
+              "#gb_78"
+            ],
+            "html": "<a onclick=\"gbar.logger.il(1,{t:78});\" class=\"gbzt\" id=\"gb_78\" href=\"https://play.google.com/?hl=pt-BR&amp;tab=w8\" style=\"\"><span class=\"gbtb2\"></span><span class=\"gbts\" style=\"\">Play</span></a>",
+            "impact": null,
+            "any": [
+              {
+                "id": "duplicate-id",
+                "impact": "critical",
+                "message": "Document has no elements that share the same id attribute",
+                "data": "gb_78",
+                "relatedNodes": []
+              }
+            ],
+            "all": [],
+            "none": []
+          },
+          {
+            "target": [
+              "#gb_36"
+            ],
+            "html": "<a onclick=\"gbar.logger.il(1,{t:36});\" class=\"gbzt\" id=\"gb_36\" href=\"http://www.youtube.com/?gl=BR&amp;tab=w1\" style=\"\"><span class=\"gbtb2\"></span><span class=\"gbts\" style=\"\">YouTube</span></a>",
+            "impact": null,
+            "any": [
+              {
+                "id": "duplicate-id",
+                "impact": "critical",
+                "message": "Document has no elements that share the same id attribute",
+                "data": "gb_36",
+                "relatedNodes": []
+              }
+            ],
+            "all": [],
+            "none": []
+          },
+          {
+            "target": [
+              "#gb_5"
+            ],
+            "html": "<a onclick=\"gbar.logger.il(1,{t:5});\" class=\"gbzt\" id=\"gb_5\" href=\"http://news.google.com.br/nwshp?hl=pt-BR&amp;tab=wn\" style=\"\"><span class=\"gbtb2\"></span><span class=\"gbts\" style=\"\">Notícias</span></a>",
+            "impact": null,
+            "any": [
+              {
+                "id": "duplicate-id",
+                "impact": "critical",
+                "message": "Document has no elements that share the same id attribute",
+                "data": "gb_5",
+                "relatedNodes": []
+              }
+            ],
+            "all": [],
+            "none": []
+          },
+          {
+            "target": [
+              "#gb_23"
+            ],
+            "html": "<a onclick=\"gbar.logger.il(1,{t:23});\" class=\"gbzt\" id=\"gb_23\" href=\"https://mail.google.com/mail/?tab=wm\" style=\"\"><span class=\"gbtb2\"></span><span class=\"gbts\" style=\"\">Gmail</span></a>",
+            "impact": null,
+            "any": [
+              {
+                "id": "duplicate-id",
+                "impact": "critical",
+                "message": "Document has no elements that share the same id attribute",
+                "data": "gb_23",
+                "relatedNodes": []
+              }
+            ],
+            "all": [],
+            "none": []
+          },
+          {
+            "target": [
+              "#gbztm"
+            ],
+            "html": "<a class=\"gbgt\" id=\"gbztm\" href=\"https://www.google.com.br/intl/pt-BR/options/\" onclick=\"gbar.tg(event,this)\" aria-haspopup=\"true\" aria-owns=\"gbd\" style=\"\">",
+            "impact": null,
+            "any": [
+              {
+                "id": "duplicate-id",
+                "impact": "critical",
+                "message": "Document has no elements that share the same id attribute",
+                "data": "gbztm",
+                "relatedNodes": []
+              }
+            ],
+            "all": [],
+            "none": []
+          },
+          {
+            "target": [
+              "#gbztms"
+            ],
+            "html": "<span id=\"gbztms\" class=\"gbts gbtsa\" style=\"\"><span id=\"gbztms1\" style=\"\">Mais</span><span class=\"gbma\"></span></span>",
+            "impact": null,
+            "any": [
+              {
+                "id": "duplicate-id",
+                "impact": "critical",
+                "message": "Document has no elements that share the same id attribute",
+                "data": "gbztms",
+                "relatedNodes": []
+              }
+            ],
+            "all": [],
+            "none": []
+          },
+          {
+            "target": [
+              "#gbztms1"
+            ],
+            "html": "<span id=\"gbztms1\" style=\"\">Mais</span>",
+            "impact": null,
+            "any": [
+              {
+                "id": "duplicate-id",
+                "impact": "critical",
+                "message": "Document has no elements that share the same id attribute",
+                "data": "gbztms1",
+                "relatedNodes": []
+              }
+            ],
+            "all": [],
+            "none": []
+          },
+          {
+            "target": [
+              "#gbg"
+            ],
+            "html": "<div id=\"gbg\" style=\"\">",
+            "impact": null,
+            "any": [
+              {
+                "id": "duplicate-id",
+                "impact": "critical",
+                "message": "Document has no elements that share the same id attribute",
+                "data": "gbg",
+                "relatedNodes": []
+              }
+            ],
+            "all": [],
+            "none": []
+          },
+          {
+            "target": [
+              "#gb_70"
+            ],
+            "html": "<a target=\"_top\" href=\"https://accounts.google.com/ServiceLogin?hl=pt-BR&amp;passive=true&amp;continue=http://www.google.com.br/%3Fgfe_rd%3Dcr%26ei%3DAj8SWOHYGPCp8wfAgrXYBg\" onclick=\"gbar.logger.il(9,{l:'i'})\" id=\"gb_70\" class=\"gbgt\" style=\"\">",
+            "impact": null,
+            "any": [
+              {
+                "id": "duplicate-id",
+                "impact": "critical",
+                "message": "Document has no elements that share the same id attribute",
+                "data": "gb_70",
+                "relatedNodes": []
+              }
+            ],
+            "all": [],
+            "none": []
+          },
+          {
+            "target": [
+              "#gbgs4"
+            ],
+            "html": "<span id=\"gbgs4\" class=\"gbts\" style=\"\"><span id=\"gbi4s1\" style=\"\">Fazer login</span></span>",
+            "impact": null,
+            "any": [
+              {
+                "id": "duplicate-id",
+                "impact": "critical",
+                "message": "Document has no elements that share the same id attribute",
+                "data": "gbgs4",
+                "relatedNodes": []
+              }
+            ],
+            "all": [],
+            "none": []
+          },
+          {
+            "target": [
+              "#gbi4s1"
+            ],
+            "html": "<span id=\"gbi4s1\" style=\"\">Fazer login</span>",
+            "impact": null,
+            "any": [
+              {
+                "id": "duplicate-id",
+                "impact": "critical",
+                "message": "Document has no elements that share the same id attribute",
+                "data": "gbi4s1",
+                "relatedNodes": []
+              }
+            ],
+            "all": [],
+            "none": []
+          },
+          {
+            "target": [
+              "#gbg5"
+            ],
+            "html": "<a class=\"gbgt\" id=\"gbg5\" href=\"http://www.google.com.br/preferences?hl=pt-BR\" title=\"Opções\" onclick=\"gbar.tg(event,this)\" aria-haspopup=\"true\" aria-owns=\"gbd5\"><span class=\"gbtb2\"></span><span id=\"gbgs5\" class=\"gbts\"><span id=\"gbi5\"></span></span></a>",
+            "impact": null,
+            "any": [
+              {
+                "id": "duplicate-id",
+                "impact": "critical",
+                "message": "Document has no elements that share the same id attribute",
+                "data": "gbg5",
+                "relatedNodes": []
+              }
+            ],
+            "all": [],
+            "none": []
+          },
+          {
+            "target": [
+              "#gbgs5"
+            ],
+            "html": "<span id=\"gbgs5\" class=\"gbts\"><span id=\"gbi5\"></span></span>",
+            "impact": null,
+            "any": [
+              {
+                "id": "duplicate-id",
+                "impact": "critical",
+                "message": "Document has no elements that share the same id attribute",
+                "data": "gbgs5",
+                "relatedNodes": []
+              }
+            ],
+            "all": [],
+            "none": []
+          },
+          {
+            "target": [
+              "#gbi5"
+            ],
+            "html": "<span id=\"gbi5\"></span>",
+            "impact": null,
+            "any": [
+              {
+                "id": "duplicate-id",
+                "impact": "critical",
+                "message": "Document has no elements that share the same id attribute",
+                "data": "gbi5",
+                "relatedNodes": []
+              }
+            ],
+            "all": [],
+            "none": []
+          },
+          {
+            "target": [
+              "#gbx3"
+            ],
+            "html": "<div id=\"gbx3\"></div>",
+            "impact": null,
+            "any": [
+              {
+                "id": "duplicate-id",
+                "impact": "critical",
+                "message": "Document has no elements that share the same id attribute",
+                "data": "gbx3",
+                "relatedNodes": []
+              }
+            ],
+            "all": [],
+            "none": []
+          },
+          {
+            "target": [
+              "#gbx4"
+            ],
+            "html": "<div id=\"gbx4\" style=\"\"></div>",
+            "impact": null,
+            "any": [
+              {
+                "id": "duplicate-id",
+                "impact": "critical",
+                "message": "Document has no elements that share the same id attribute",
+                "data": "gbx4",
+                "relatedNodes": []
+              }
+            ],
+            "all": [],
+            "none": []
+          },
+          {
+            "target": [
+              "#lgpd"
+            ],
+            "html": "<br clear=\"all\" id=\"lgpd\">",
+            "impact": null,
+            "any": [
+              {
+                "id": "duplicate-id",
+                "impact": "critical",
+                "message": "Document has no elements that share the same id attribute",
+                "data": "lgpd",
+                "relatedNodes": []
+              }
+            ],
+            "all": [],
+            "none": []
+          },
+          {
+            "target": [
+              "#lga"
+            ],
+            "html": "<div id=\"lga\">",
+            "impact": null,
+            "any": [
+              {
+                "id": "duplicate-id",
+                "impact": "critical",
+                "message": "Document has no elements that share the same id attribute",
+                "data": "lga",
+                "relatedNodes": []
+              }
+            ],
+            "all": [],
+            "none": []
+          },
+          {
+            "target": [
+              "#hplogo"
+            ],
+            "html": "<div style=\"height: 110px; width: 276px; background-image: url(http://www.google.com.br/images/branding/googlelogo/1x/googlelogo_white_background_color_272x92dp.png); background-position: initial initial; background-repeat: no-repeat no-repeat;\" title=\"Google\" align=\"left\" id=\"hplogo\" onload=\"window.lol&amp;&amp;lol()\">",
+            "impact": null,
+            "any": [
+              {
+                "id": "duplicate-id",
+                "impact": "critical",
+                "message": "Document has no elements that share the same id attribute",
+                "data": "hplogo",
+                "relatedNodes": []
+              }
+            ],
+            "all": [],
+            "none": []
+          },
+          {
+            "target": [
+              "#gac_scont"
+            ],
+            "html": "<div id=\"gac_scont\"></div>",
+            "impact": null,
+            "any": [
+              {
+                "id": "duplicate-id",
+                "impact": "critical",
+                "message": "Document has no elements that share the same id attribute",
+                "data": "gac_scont",
+                "relatedNodes": []
+              }
+            ],
+            "all": [],
+            "none": []
+          },
+          {
+            "target": [
+              "#als"
+            ],
+            "html": "<div id=\"als\">",
+            "impact": null,
+            "any": [
+              {
+                "id": "duplicate-id",
+                "impact": "critical",
+                "message": "Document has no elements that share the same id attribute",
+                "data": "als",
+                "relatedNodes": []
+              }
+            ],
+            "all": [],
+            "none": []
+          },
+          {
+            "target": [
+              "#_eEe"
+            ],
+            "html": "<div id=\"_eEe\">Google.com.br é oferecido em: <a href=\"http://www.google.com.br/setprefs?sig=0_EtpL4QmYPOCAbO757R9PIxcfs6Y%3D&amp;hl=en&amp;source=homepage\" data-ved=\"0ahUKEwim_s_PxvvPAhUHyj4KHTxlDOoQ2ZgBCAU\">English</a> </div>",
+            "impact": null,
+            "any": [
+              {
+                "id": "duplicate-id",
+                "impact": "critical",
+                "message": "Document has no elements that share the same id attribute",
+                "data": "_eEe",
+                "relatedNodes": []
+              }
+            ],
+            "all": [],
+            "none": []
+          },
+          {
+            "target": [
+              "#footer"
+            ],
+            "html": "<span id=\"footer\">",
+            "impact": null,
+            "any": [
+              {
+                "id": "duplicate-id",
+                "impact": "critical",
+                "message": "Document has no elements that share the same id attribute",
+                "data": "footer",
+                "relatedNodes": []
+              }
+            ],
+            "all": [],
+            "none": []
+          },
+          {
+            "target": [
+              "#fll"
+            ],
+            "html": "<div style=\"margin:19px auto;text-align:center\" id=\"fll\">",
+            "impact": null,
+            "any": [
+              {
+                "id": "duplicate-id",
+                "impact": "critical",
+                "message": "Document has no elements that share the same id attribute",
+                "data": "fll",
+                "relatedNodes": []
+              }
+            ],
+            "all": [],
+            "none": []
+          },
+          {
+            "target": [
+              "#fehl"
+            ],
+            "html": "<a href=\"http://www.google.com.br/setprefdomain?prefdom=US&amp;sig=__nZ6LqjvolfWxvPtb_eXnpmV82r8%3D\" id=\"fehl\">Google.com</a>",
+            "impact": null,
+            "any": [
+              {
+                "id": "duplicate-id",
+                "impact": "critical",
+                "message": "Document has no elements that share the same id attribute",
+                "data": "fehl",
+                "relatedNodes": []
+              }
+            ],
+            "all": [],
+            "none": []
+          },
+          {
+            "target": [
+              "#xjsd"
+            ],
+            "html": "<div id=\"xjsd\"><script src=\"/xjs/_/js/k=xjs.hp.en_US.y1Ww5_woifk.O/m=sb_he,d/rt=j/d=1/t=zcms/rs=ACT90oHUj97awodLSOQYpr0rkIsLnA8IdQ\"></script></div>",
+            "impact": null,
+            "any": [
+              {
+                "id": "duplicate-id",
+                "impact": "critical",
+                "message": "Document has no elements that share the same id attribute",
+                "data": "xjsd",
+                "relatedNodes": []
+              }
+            ],
+            "all": [],
+            "none": []
+          },
+          {
+            "target": [
+              "#xjsi"
+            ],
+            "html": "<div id=\"xjsi\">",
+            "impact": null,
+            "any": [
+              {
+                "id": "duplicate-id",
+                "impact": "critical",
+                "message": "Document has no elements that share the same id attribute",
+                "data": "xjsi",
                 "relatedNodes": []
               }
             ],
@@ -37,7 +1549,7 @@
         "description": "Ensures every HTML document has a lang attribute and its value is valid",
         "help": "<html> element must have a valid lang attribute",
         "helpUrl": "https://dequeuniversity.com/rules/axe/1.1/html-lang",
-        "impact": "serious",
+        "impact": null,
         "tags": [
           "wcag2a",
           "wcag311"
@@ -47,13 +1559,981 @@
             "target": [
               "html"
             ],
-            "html": "<html>",
-            "impact": "serious",
+            "html": "<html itemscope=\"\" itemtype=\"http://schema.org/WebPage\" lang=\"pt\" style=\"\">",
+            "impact": null,
             "any": [
               {
                 "id": "has-lang",
                 "impact": "serious",
-                "message": "The <html> element does not have a lang attribute",
+                "message": "The <html> element has a lang attribute",
+                "data": null,
+                "relatedNodes": []
+              }
+            ],
+            "all": [],
+            "none": [
+              {
+                "id": "valid-lang",
+                "impact": "serious",
+                "message": "Value of lang attribute is included in the list of valid languages",
+                "data": null,
+                "relatedNodes": []
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "image-alt",
+        "description": "Ensures <img> elements have alternate text or a role of none or presentation",
+        "help": "Images must have alternate text",
+        "helpUrl": "https://dequeuniversity.com/rules/axe/1.1/image-alt",
+        "impact": null,
+        "tags": [
+          "wcag2a",
+          "wcag111",
+          "section508",
+          "section508a"
+        ],
+        "nodes": [
+          {
+            "target": [
+              "body > center > form > table > tbody > tr > td:nth-of-type(2) > div > div > img"
+            ],
+            "html": "<img src=\"/textinputassistant/tia.png\" style=\"position:absolute;cursor:pointer;right:5px;top:4px;z-index:300\" onclick=\"(function(){var src='/textinputassistant/11/pt-BR_tia.js';var s=document.createElement('script');s.src=src;google.dom.append(s);})();\" alt=\"\" height=\"23\" width=\"27\">",
+            "impact": null,
+            "any": [
+              {
+                "id": "has-alt",
+                "impact": "critical",
+                "message": "Element has an alt attribute",
+                "data": null,
+                "relatedNodes": []
+              }
+            ],
+            "all": [],
+            "none": []
+          }
+        ]
+      },
+      {
+        "id": "label",
+        "description": "Ensures every form element has a label",
+        "help": "Form elements must have labels",
+        "helpUrl": "https://dequeuniversity.com/rules/axe/1.1/label",
+        "impact": null,
+        "tags": [
+          "wcag2a",
+          "wcag332",
+          "wcag131",
+          "section508",
+          "section508n"
+        ],
+        "nodes": [
+          {
+            "target": [
+              "body > center > form > table > tbody > tr > td:nth-of-type(2) > div > div > .lst.tiah"
+            ],
+            "html": "<input style=\"color: rgb(0, 0, 0); margin: 0px; padding: 5px 38px 0px 6px; vertical-align: top; outline: none;\" autocomplete=\"off\" class=\"lst tiah\" value=\"\" title=\"Pesquisa Google\" maxlength=\"2048\" name=\"q\" size=\"57\" dir=\"ltr\" spellcheck=\"false\">",
+            "impact": null,
+            "any": [
+              {
+                "id": "non-empty-title",
+                "impact": "critical",
+                "message": "Element has a title attribute",
+                "data": null,
+                "relatedNodes": []
+              }
+            ],
+            "all": [],
+            "none": [
+              {
+                "id": "multiple-label",
+                "impact": "serious",
+                "message": "Form element does not have multiple <label> elements",
+                "data": null,
+                "relatedNodes": []
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "layout-table",
+        "description": "Ensures presentational <table> elements do not use <th>, <caption> elements or the summary attribute",
+        "help": "Layout tables must not use data table elements",
+        "helpUrl": "https://dequeuniversity.com/rules/axe/1.1/layout-table",
+        "impact": null,
+        "tags": [
+          "wcag2a",
+          "wcag131"
+        ],
+        "nodes": [
+          {
+            "target": [
+              "body > center > form > table"
+            ],
+            "html": "<table cellpadding=\"0\" cellspacing=\"0\">",
+            "impact": null,
+            "any": [],
+            "all": [],
+            "none": [
+              {
+                "id": "has-th",
+                "impact": "serious",
+                "message": "Layout table does not use <th> elements",
+                "data": null,
+                "relatedNodes": []
+              },
+              {
+                "id": "has-caption",
+                "impact": "serious",
+                "message": "Layout table does not use <caption> element",
+                "data": null,
+                "relatedNodes": []
+              },
+              {
+                "id": "has-summary",
+                "impact": "serious",
+                "message": "Layout table does not use summary attribute",
+                "data": null,
+                "relatedNodes": []
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "link-name",
+        "description": "Ensures links have discernible text",
+        "help": "Links must have discernible text",
+        "helpUrl": "https://dequeuniversity.com/rules/axe/1.1/link-name",
+        "impact": null,
+        "tags": [
+          "wcag2a",
+          "wcag111",
+          "wcag412",
+          "section508",
+          "section508a"
+        ],
+        "nodes": [
+          {
+            "target": [
+              "#gb_119"
+            ],
+            "html": "<a onclick=\"gbar.logger.il(1,{t:119});\" class=\"gbzt\" id=\"gb_119\" href=\"https://plus.google.com/?gpsrc=ogpy0&amp;tab=wX\" style=\"\"><span class=\"gbtb2\"></span><span class=\"gbts\" style=\"\">Google+</span></a>",
+            "impact": null,
+            "any": [
+              {
+                "id": "has-visible-text",
+                "impact": "critical",
+                "message": "Element has text that is visible to screen readers",
+                "data": null,
+                "relatedNodes": []
+              }
+            ],
+            "all": [],
+            "none": [
+              {
+                "id": "focusable-no-name",
+                "impact": "serious",
+                "message": "Element is not in tab order or has accessible text",
+                "data": null,
+                "relatedNodes": []
+              }
+            ]
+          },
+          {
+            "target": [
+              "#gb_1"
+            ],
+            "html": "<a onclick=\"gbar.logger.il(1,{t:1});\" class=\"gbzt gbz0l gbp1\" id=\"gb_1\" href=\"https://www.google.com.br/webhp?tab=ww\" style=\"\"><span class=\"gbtb2\"></span><span class=\"gbts\" style=\"\">Pesquisa</span></a>",
+            "impact": null,
+            "any": [
+              {
+                "id": "has-visible-text",
+                "impact": "critical",
+                "message": "Element has text that is visible to screen readers",
+                "data": null,
+                "relatedNodes": []
+              }
+            ],
+            "all": [],
+            "none": [
+              {
+                "id": "focusable-no-name",
+                "impact": "serious",
+                "message": "Element is not in tab order or has accessible text",
+                "data": null,
+                "relatedNodes": []
+              }
+            ]
+          },
+          {
+            "target": [
+              "#gb_2"
+            ],
+            "html": "<a onclick=\"gbar.logger.il(1,{t:2});\" class=\"gbzt\" id=\"gb_2\" href=\"http://www.google.com.br/imghp?hl=pt-BR&amp;tab=wi\" style=\"\"><span class=\"gbtb2\"></span><span class=\"gbts\" style=\"\">Imagens</span></a>",
+            "impact": null,
+            "any": [
+              {
+                "id": "has-visible-text",
+                "impact": "critical",
+                "message": "Element has text that is visible to screen readers",
+                "data": null,
+                "relatedNodes": []
+              }
+            ],
+            "all": [],
+            "none": [
+              {
+                "id": "focusable-no-name",
+                "impact": "serious",
+                "message": "Element is not in tab order or has accessible text",
+                "data": null,
+                "relatedNodes": []
+              }
+            ]
+          },
+          {
+            "target": [
+              "#gb_8"
+            ],
+            "html": "<a onclick=\"gbar.logger.il(1,{t:8});\" class=\"gbzt\" id=\"gb_8\" href=\"http://maps.google.com.br/maps?hl=pt-BR&amp;tab=wl\" style=\"\"><span class=\"gbtb2\"></span><span class=\"gbts\" style=\"\">Maps</span></a>",
+            "impact": null,
+            "any": [
+              {
+                "id": "has-visible-text",
+                "impact": "critical",
+                "message": "Element has text that is visible to screen readers",
+                "data": null,
+                "relatedNodes": []
+              }
+            ],
+            "all": [],
+            "none": [
+              {
+                "id": "focusable-no-name",
+                "impact": "serious",
+                "message": "Element is not in tab order or has accessible text",
+                "data": null,
+                "relatedNodes": []
+              }
+            ]
+          },
+          {
+            "target": [
+              "#gb_78"
+            ],
+            "html": "<a onclick=\"gbar.logger.il(1,{t:78});\" class=\"gbzt\" id=\"gb_78\" href=\"https://play.google.com/?hl=pt-BR&amp;tab=w8\" style=\"\"><span class=\"gbtb2\"></span><span class=\"gbts\" style=\"\">Play</span></a>",
+            "impact": null,
+            "any": [
+              {
+                "id": "has-visible-text",
+                "impact": "critical",
+                "message": "Element has text that is visible to screen readers",
+                "data": null,
+                "relatedNodes": []
+              }
+            ],
+            "all": [],
+            "none": [
+              {
+                "id": "focusable-no-name",
+                "impact": "serious",
+                "message": "Element is not in tab order or has accessible text",
+                "data": null,
+                "relatedNodes": []
+              }
+            ]
+          },
+          {
+            "target": [
+              "#gb_36"
+            ],
+            "html": "<a onclick=\"gbar.logger.il(1,{t:36});\" class=\"gbzt\" id=\"gb_36\" href=\"http://www.youtube.com/?gl=BR&amp;tab=w1\" style=\"\"><span class=\"gbtb2\"></span><span class=\"gbts\" style=\"\">YouTube</span></a>",
+            "impact": null,
+            "any": [
+              {
+                "id": "has-visible-text",
+                "impact": "critical",
+                "message": "Element has text that is visible to screen readers",
+                "data": null,
+                "relatedNodes": []
+              }
+            ],
+            "all": [],
+            "none": [
+              {
+                "id": "focusable-no-name",
+                "impact": "serious",
+                "message": "Element is not in tab order or has accessible text",
+                "data": null,
+                "relatedNodes": []
+              }
+            ]
+          },
+          {
+            "target": [
+              "#gb_5"
+            ],
+            "html": "<a onclick=\"gbar.logger.il(1,{t:5});\" class=\"gbzt\" id=\"gb_5\" href=\"http://news.google.com.br/nwshp?hl=pt-BR&amp;tab=wn\" style=\"\"><span class=\"gbtb2\"></span><span class=\"gbts\" style=\"\">Notícias</span></a>",
+            "impact": null,
+            "any": [
+              {
+                "id": "has-visible-text",
+                "impact": "critical",
+                "message": "Element has text that is visible to screen readers",
+                "data": null,
+                "relatedNodes": []
+              }
+            ],
+            "all": [],
+            "none": [
+              {
+                "id": "focusable-no-name",
+                "impact": "serious",
+                "message": "Element is not in tab order or has accessible text",
+                "data": null,
+                "relatedNodes": []
+              }
+            ]
+          },
+          {
+            "target": [
+              "#gb_23"
+            ],
+            "html": "<a onclick=\"gbar.logger.il(1,{t:23});\" class=\"gbzt\" id=\"gb_23\" href=\"https://mail.google.com/mail/?tab=wm\" style=\"\"><span class=\"gbtb2\"></span><span class=\"gbts\" style=\"\">Gmail</span></a>",
+            "impact": null,
+            "any": [
+              {
+                "id": "has-visible-text",
+                "impact": "critical",
+                "message": "Element has text that is visible to screen readers",
+                "data": null,
+                "relatedNodes": []
+              }
+            ],
+            "all": [],
+            "none": [
+              {
+                "id": "focusable-no-name",
+                "impact": "serious",
+                "message": "Element is not in tab order or has accessible text",
+                "data": null,
+                "relatedNodes": []
+              }
+            ]
+          },
+          {
+            "target": [
+              "#gbztm"
+            ],
+            "html": "<a class=\"gbgt\" id=\"gbztm\" href=\"https://www.google.com.br/intl/pt-BR/options/\" onclick=\"gbar.tg(event,this)\" aria-haspopup=\"true\" aria-owns=\"gbd\" style=\"\">",
+            "impact": null,
+            "any": [
+              {
+                "id": "has-visible-text",
+                "impact": "critical",
+                "message": "Element has text that is visible to screen readers",
+                "data": null,
+                "relatedNodes": []
+              }
+            ],
+            "all": [],
+            "none": [
+              {
+                "id": "focusable-no-name",
+                "impact": "serious",
+                "message": "Element is not in tab order or has accessible text",
+                "data": null,
+                "relatedNodes": []
+              }
+            ]
+          },
+          {
+            "target": [
+              "#gb_70"
+            ],
+            "html": "<a target=\"_top\" href=\"https://accounts.google.com/ServiceLogin?hl=pt-BR&amp;passive=true&amp;continue=http://www.google.com.br/%3Fgfe_rd%3Dcr%26ei%3DAj8SWOHYGPCp8wfAgrXYBg\" onclick=\"gbar.logger.il(9,{l:'i'})\" id=\"gb_70\" class=\"gbgt\" style=\"\">",
+            "impact": null,
+            "any": [
+              {
+                "id": "has-visible-text",
+                "impact": "critical",
+                "message": "Element has text that is visible to screen readers",
+                "data": null,
+                "relatedNodes": []
+              }
+            ],
+            "all": [],
+            "none": [
+              {
+                "id": "focusable-no-name",
+                "impact": "serious",
+                "message": "Element is not in tab order or has accessible text",
+                "data": null,
+                "relatedNodes": []
+              }
+            ]
+          },
+          {
+            "target": [
+              "#gbg5"
+            ],
+            "html": "<a class=\"gbgt\" id=\"gbg5\" href=\"http://www.google.com.br/preferences?hl=pt-BR\" title=\"Opções\" onclick=\"gbar.tg(event,this)\" aria-haspopup=\"true\" aria-owns=\"gbd5\"><span class=\"gbtb2\"></span><span id=\"gbgs5\" class=\"gbts\"><span id=\"gbi5\"></span></span></a>",
+            "impact": null,
+            "any": [
+              {
+                "id": "has-visible-text",
+                "impact": "critical",
+                "message": "Element has text that is visible to screen readers",
+                "data": null,
+                "relatedNodes": []
+              }
+            ],
+            "all": [],
+            "none": [
+              {
+                "id": "focusable-no-name",
+                "impact": "serious",
+                "message": "Element is not in tab order or has accessible text",
+                "data": null,
+                "relatedNodes": []
+              }
+            ]
+          },
+          {
+            "target": [
+              "body > center > form > table > tbody > tr > .fl.sblc > a:nth-of-type(1)"
+            ],
+            "html": "<a href=\"/advanced_search?hl=pt&amp;authuser=0\">Pesquisa avançada</a>",
+            "impact": null,
+            "any": [
+              {
+                "id": "has-visible-text",
+                "impact": "critical",
+                "message": "Element has text that is visible to screen readers",
+                "data": null,
+                "relatedNodes": []
+              }
+            ],
+            "all": [],
+            "none": [
+              {
+                "id": "focusable-no-name",
+                "impact": "serious",
+                "message": "Element is not in tab order or has accessible text",
+                "data": null,
+                "relatedNodes": []
+              }
+            ]
+          },
+          {
+            "target": [
+              "body > center > form > table > tbody > tr > .fl.sblc > a:nth-of-type(2)"
+            ],
+            "html": "<a href=\"/language_tools?hl=pt&amp;authuser=0\">Ferramentas de idioma</a>",
+            "impact": null,
+            "any": [
+              {
+                "id": "has-visible-text",
+                "impact": "critical",
+                "message": "Element has text that is visible to screen readers",
+                "data": null,
+                "relatedNodes": []
+              }
+            ],
+            "all": [],
+            "none": [
+              {
+                "id": "focusable-no-name",
+                "impact": "serious",
+                "message": "Element is not in tab order or has accessible text",
+                "data": null,
+                "relatedNodes": []
+              }
+            ]
+          },
+          {
+            "target": [
+              "#_eEe > a"
+            ],
+            "html": "<a href=\"http://www.google.com.br/setprefs?sig=0_EtpL4QmYPOCAbO757R9PIxcfs6Y%3D&amp;hl=en&amp;source=homepage\" data-ved=\"0ahUKEwim_s_PxvvPAhUHyj4KHTxlDOoQ2ZgBCAU\">English</a>",
+            "impact": null,
+            "any": [
+              {
+                "id": "has-visible-text",
+                "impact": "critical",
+                "message": "Element has text that is visible to screen readers",
+                "data": null,
+                "relatedNodes": []
+              }
+            ],
+            "all": [],
+            "none": [
+              {
+                "id": "focusable-no-name",
+                "impact": "serious",
+                "message": "Element is not in tab order or has accessible text",
+                "data": null,
+                "relatedNodes": []
+              }
+            ]
+          },
+          {
+            "target": [
+              "#fll > a:nth-of-type(1)"
+            ],
+            "html": "<a href=\"/intl/pt-BR/ads/\">Soluções de publicidade</a>",
+            "impact": null,
+            "any": [
+              {
+                "id": "has-visible-text",
+                "impact": "critical",
+                "message": "Element has text that is visible to screen readers",
+                "data": null,
+                "relatedNodes": []
+              }
+            ],
+            "all": [],
+            "none": [
+              {
+                "id": "focusable-no-name",
+                "impact": "serious",
+                "message": "Element is not in tab order or has accessible text",
+                "data": null,
+                "relatedNodes": []
+              }
+            ]
+          },
+          {
+            "target": [
+              "#fll > a:nth-of-type(2)"
+            ],
+            "html": "<a href=\"/services/\">Soluções empresariais</a>",
+            "impact": null,
+            "any": [
+              {
+                "id": "has-visible-text",
+                "impact": "critical",
+                "message": "Element has text that is visible to screen readers",
+                "data": null,
+                "relatedNodes": []
+              }
+            ],
+            "all": [],
+            "none": [
+              {
+                "id": "focusable-no-name",
+                "impact": "serious",
+                "message": "Element is not in tab order or has accessible text",
+                "data": null,
+                "relatedNodes": []
+              }
+            ]
+          },
+          {
+            "target": [
+              "#fll > a:nth-of-type(3)"
+            ],
+            "html": "<a href=\"https://plus.google.com/107558061013247958406\" rel=\"publisher\">+Google</a>",
+            "impact": null,
+            "any": [
+              {
+                "id": "has-visible-text",
+                "impact": "critical",
+                "message": "Element has text that is visible to screen readers",
+                "data": null,
+                "relatedNodes": []
+              }
+            ],
+            "all": [],
+            "none": [
+              {
+                "id": "focusable-no-name",
+                "impact": "serious",
+                "message": "Element is not in tab order or has accessible text",
+                "data": null,
+                "relatedNodes": []
+              }
+            ]
+          },
+          {
+            "target": [
+              "#fll > a:nth-of-type(4)"
+            ],
+            "html": "<a href=\"/intl/pt-BR/about.html\">Sobre o Google</a>",
+            "impact": null,
+            "any": [
+              {
+                "id": "has-visible-text",
+                "impact": "critical",
+                "message": "Element has text that is visible to screen readers",
+                "data": null,
+                "relatedNodes": []
+              }
+            ],
+            "all": [],
+            "none": [
+              {
+                "id": "focusable-no-name",
+                "impact": "serious",
+                "message": "Element is not in tab order or has accessible text",
+                "data": null,
+                "relatedNodes": []
+              }
+            ]
+          },
+          {
+            "target": [
+              "#fehl"
+            ],
+            "html": "<a href=\"http://www.google.com.br/setprefdomain?prefdom=US&amp;sig=__nZ6LqjvolfWxvPtb_eXnpmV82r8%3D\" id=\"fehl\">Google.com</a>",
+            "impact": null,
+            "any": [
+              {
+                "id": "has-visible-text",
+                "impact": "critical",
+                "message": "Element has text that is visible to screen readers",
+                "data": null,
+                "relatedNodes": []
+              }
+            ],
+            "all": [],
+            "none": [
+              {
+                "id": "focusable-no-name",
+                "impact": "serious",
+                "message": "Element is not in tab order or has accessible text",
+                "data": null,
+                "relatedNodes": []
+              }
+            ]
+          },
+          {
+            "target": [
+              "#footer > p > a:nth-of-type(1)"
+            ],
+            "html": "<a href=\"/intl/pt-BR/policies/privacy/\">Privacidade</a>",
+            "impact": null,
+            "any": [
+              {
+                "id": "has-visible-text",
+                "impact": "critical",
+                "message": "Element has text that is visible to screen readers",
+                "data": null,
+                "relatedNodes": []
+              }
+            ],
+            "all": [],
+            "none": [
+              {
+                "id": "focusable-no-name",
+                "impact": "serious",
+                "message": "Element is not in tab order or has accessible text",
+                "data": null,
+                "relatedNodes": []
+              }
+            ]
+          },
+          {
+            "target": [
+              "#footer > p > a:nth-of-type(2)"
+            ],
+            "html": "<a href=\"/intl/pt-BR/policies/terms/\">Termos</a>",
+            "impact": null,
+            "any": [
+              {
+                "id": "has-visible-text",
+                "impact": "critical",
+                "message": "Element has text that is visible to screen readers",
+                "data": null,
+                "relatedNodes": []
+              }
+            ],
+            "all": [],
+            "none": [
+              {
+                "id": "focusable-no-name",
+                "impact": "serious",
+                "message": "Element is not in tab order or has accessible text",
+                "data": null,
+                "relatedNodes": []
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "list",
+        "description": "Ensures that lists are structured correctly",
+        "help": "<ul> and <ol> must only directly contain <li>, <script> or <template> elements",
+        "helpUrl": "https://dequeuniversity.com/rules/axe/1.1/list",
+        "impact": null,
+        "tags": [
+          "wcag2a",
+          "wcag131"
+        ],
+        "nodes": [
+          {
+            "target": [
+              "#gbzc"
+            ],
+            "html": "<ol id=\"gbzc\" class=\"gbtc\" style=\"\">",
+            "impact": null,
+            "any": [],
+            "all": [],
+            "none": [
+              {
+                "id": "only-listitems",
+                "impact": "serious",
+                "message": "List element only has children that are <li>, <script> or <template> elements",
+                "data": null,
+                "relatedNodes": []
+              }
+            ]
+          },
+          {
+            "target": [
+              "#gbg > .gbtc"
+            ],
+            "html": "<ol class=\"gbtc\" style=\"\">",
+            "impact": null,
+            "any": [],
+            "all": [],
+            "none": [
+              {
+                "id": "only-listitems",
+                "impact": "serious",
+                "message": "List element only has children that are <li>, <script> or <template> elements",
+                "data": null,
+                "relatedNodes": []
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "listitem",
+        "description": "Ensures <li> elements are used semantically",
+        "help": "<li> elements must be contained in a <ul> or <ol>",
+        "helpUrl": "https://dequeuniversity.com/rules/axe/1.1/listitem",
+        "impact": null,
+        "tags": [
+          "wcag2a",
+          "wcag131"
+        ],
+        "nodes": [
+          {
+            "target": [
+              "#gbzc > li:nth-of-type(1)"
+            ],
+            "html": "<li class=\"gbt\" style=\"\"><a onclick=\"gbar.logger.il(1,{t:119});\" class=\"gbzt\" id=\"gb_119\" href=\"https://plus.google.com/?gpsrc=ogpy0&amp;tab=wX\" style=\"\"><span class=\"gbtb2\"></span><span class=\"gbts\" style=\"\">Google+</span></a></li>",
+            "impact": null,
+            "any": [
+              {
+                "id": "listitem",
+                "impact": "critical",
+                "message": "List item has a <ul> or <ol> parent element",
+                "data": null,
+                "relatedNodes": []
+              }
+            ],
+            "all": [],
+            "none": []
+          },
+          {
+            "target": [
+              "#gbzc > li:nth-of-type(2)"
+            ],
+            "html": "<li class=\"gbt\" style=\"\"><a onclick=\"gbar.logger.il(1,{t:1});\" class=\"gbzt gbz0l gbp1\" id=\"gb_1\" href=\"https://www.google.com.br/webhp?tab=ww\" style=\"\"><span class=\"gbtb2\"></span><span class=\"gbts\" style=\"\">Pesquisa</span></a></li>",
+            "impact": null,
+            "any": [
+              {
+                "id": "listitem",
+                "impact": "critical",
+                "message": "List item has a <ul> or <ol> parent element",
+                "data": null,
+                "relatedNodes": []
+              }
+            ],
+            "all": [],
+            "none": []
+          },
+          {
+            "target": [
+              "#gbzc > li:nth-of-type(3)"
+            ],
+            "html": "<li class=\"gbt\" style=\"\"><a onclick=\"gbar.logger.il(1,{t:2});\" class=\"gbzt\" id=\"gb_2\" href=\"http://www.google.com.br/imghp?hl=pt-BR&amp;tab=wi\" style=\"\"><span class=\"gbtb2\"></span><span class=\"gbts\" style=\"\">Imagens</span></a></li>",
+            "impact": null,
+            "any": [
+              {
+                "id": "listitem",
+                "impact": "critical",
+                "message": "List item has a <ul> or <ol> parent element",
+                "data": null,
+                "relatedNodes": []
+              }
+            ],
+            "all": [],
+            "none": []
+          },
+          {
+            "target": [
+              "#gbzc > li:nth-of-type(4)"
+            ],
+            "html": "<li class=\"gbt\" style=\"\"><a onclick=\"gbar.logger.il(1,{t:8});\" class=\"gbzt\" id=\"gb_8\" href=\"http://maps.google.com.br/maps?hl=pt-BR&amp;tab=wl\" style=\"\"><span class=\"gbtb2\"></span><span class=\"gbts\" style=\"\">Maps</span></a></li>",
+            "impact": null,
+            "any": [
+              {
+                "id": "listitem",
+                "impact": "critical",
+                "message": "List item has a <ul> or <ol> parent element",
+                "data": null,
+                "relatedNodes": []
+              }
+            ],
+            "all": [],
+            "none": []
+          },
+          {
+            "target": [
+              "#gbzc > li:nth-of-type(5)"
+            ],
+            "html": "<li class=\"gbt\" style=\"\"><a onclick=\"gbar.logger.il(1,{t:78});\" class=\"gbzt\" id=\"gb_78\" href=\"https://play.google.com/?hl=pt-BR&amp;tab=w8\" style=\"\"><span class=\"gbtb2\"></span><span class=\"gbts\" style=\"\">Play</span></a></li>",
+            "impact": null,
+            "any": [
+              {
+                "id": "listitem",
+                "impact": "critical",
+                "message": "List item has a <ul> or <ol> parent element",
+                "data": null,
+                "relatedNodes": []
+              }
+            ],
+            "all": [],
+            "none": []
+          },
+          {
+            "target": [
+              "#gbzc > li:nth-of-type(6)"
+            ],
+            "html": "<li class=\"gbt\" style=\"\"><a onclick=\"gbar.logger.il(1,{t:36});\" class=\"gbzt\" id=\"gb_36\" href=\"http://www.youtube.com/?gl=BR&amp;tab=w1\" style=\"\"><span class=\"gbtb2\"></span><span class=\"gbts\" style=\"\">YouTube</span></a></li>",
+            "impact": null,
+            "any": [
+              {
+                "id": "listitem",
+                "impact": "critical",
+                "message": "List item has a <ul> or <ol> parent element",
+                "data": null,
+                "relatedNodes": []
+              }
+            ],
+            "all": [],
+            "none": []
+          },
+          {
+            "target": [
+              "#gbzc > li:nth-of-type(7)"
+            ],
+            "html": "<li class=\"gbt\" style=\"\"><a onclick=\"gbar.logger.il(1,{t:5});\" class=\"gbzt\" id=\"gb_5\" href=\"http://news.google.com.br/nwshp?hl=pt-BR&amp;tab=wn\" style=\"\"><span class=\"gbtb2\"></span><span class=\"gbts\" style=\"\">Notícias</span></a></li>",
+            "impact": null,
+            "any": [
+              {
+                "id": "listitem",
+                "impact": "critical",
+                "message": "List item has a <ul> or <ol> parent element",
+                "data": null,
+                "relatedNodes": []
+              }
+            ],
+            "all": [],
+            "none": []
+          },
+          {
+            "target": [
+              "#gbzc > li:nth-of-type(8)"
+            ],
+            "html": "<li class=\"gbt\" style=\"\"><a onclick=\"gbar.logger.il(1,{t:23});\" class=\"gbzt\" id=\"gb_23\" href=\"https://mail.google.com/mail/?tab=wm\" style=\"\"><span class=\"gbtb2\"></span><span class=\"gbts\" style=\"\">Gmail</span></a></li>",
+            "impact": null,
+            "any": [
+              {
+                "id": "listitem",
+                "impact": "critical",
+                "message": "List item has a <ul> or <ol> parent element",
+                "data": null,
+                "relatedNodes": []
+              }
+            ],
+            "all": [],
+            "none": []
+          },
+          {
+            "target": [
+              "#gbzc > li:nth-of-type(9)"
+            ],
+            "html": "<li class=\"gbt\" style=\"\">",
+            "impact": null,
+            "any": [
+              {
+                "id": "listitem",
+                "impact": "critical",
+                "message": "List item has a <ul> or <ol> parent element",
+                "data": null,
+                "relatedNodes": []
+              }
+            ],
+            "all": [],
+            "none": []
+          },
+          {
+            "target": [
+              "#gbg > .gbtc > li:nth-of-type(1)"
+            ],
+            "html": "<li class=\"gbt\" style=\"\">",
+            "impact": null,
+            "any": [
+              {
+                "id": "listitem",
+                "impact": "critical",
+                "message": "List item has a <ul> or <ol> parent element",
+                "data": null,
+                "relatedNodes": []
+              }
+            ],
+            "all": [],
+            "none": []
+          },
+          {
+            "target": [
+              "#gbg > .gbtc > .gbt.gbtb"
+            ],
+            "html": "<li class=\"gbt gbtb\"><span class=\"gbts\"></span></li>",
+            "impact": null,
+            "any": [
+              {
+                "id": "listitem",
+                "impact": "critical",
+                "message": "List item has a <ul> or <ol> parent element",
+                "data": null,
+                "relatedNodes": []
+              }
+            ],
+            "all": [],
+            "none": []
+          },
+          {
+            "target": [
+              "#gbg > .gbtc > li:nth-of-type(3)"
+            ],
+            "html": "<li class=\"gbt\">",
+            "impact": null,
+            "any": [
+              {
+                "id": "listitem",
+                "impact": "critical",
+                "message": "List item has a <ul> or <ol> parent element",
                 "data": null,
                 "relatedNodes": []
               }
@@ -64,8 +2544,7 @@
         ]
       }
     ],
-    "passes": [],
     "timestamp": {},
-    "url": "www.uol.com.br"
+    "url": "http://www.google.com"
   }
 ]

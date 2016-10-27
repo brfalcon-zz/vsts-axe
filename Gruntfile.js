@@ -3,7 +3,7 @@ module.exports = function (grunt) {
   
   var GruntConfiguration = require('./lib/gruntConfiguration.js');
   var gruntConf = new GruntConfiguration(grunt);
-  
+
   var config = gruntConf.getConfig();
 
   grunt.initConfig({
@@ -16,6 +16,7 @@ module.exports = function (grunt) {
       }
     },
   });
+
 
   grunt.loadNpmTasks('grunt-axe-webdriver');
   grunt.registerTask('default', ['axe-webdriver']);
