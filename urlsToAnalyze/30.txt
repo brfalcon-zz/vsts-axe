@@ -1,0 +1,10 @@
+http://hwww.tjsp.jus.br/CanaisComunicacao/Feriados/ExpedienteForense
+http://hwww.tjsp.jus.br/PrimeiraInstancia/Arquivo/FAQ_Default
+http://hwww.tjsp.jus.br/Especialidade/Especialidade/Civel
+http://hwww.tjsp.jus.br/Especialidade/Especialidade/Criminal
+http://hwww.tjsp.jus.br/Especialidade/Especialidade/ExecucoesFiscais
+http://hwww.tjsp.jus.br/Especialidade/Especialidade/FamiliaSucessoes
+http://hwww.tjsp.jus.br/Especialidade/Especialidade/FazendaPublica
+http://hwww.tjsp.jus.br/Especialidade/Especialidade/InfanciaJuventude
+http://hwww.tjsp.jus.br/Especialidade/Especialidade/Juizados
+http://hwww.tjsp.jus.br/Especialidade/Especialidade/ViolenciaDomesticaFamiliar

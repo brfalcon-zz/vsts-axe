@@ -1,0 +1,11 @@
+http://hwww.tjsp.jus.br/Biblioteca
+http://hwww.tjsp.jus.br/Sistemas_DJE
+http://hwww.tjsp.jus.br/Enunciados
+http://hwww.tjsp.jus.br/CanaisComunicacao/Transparencia/ContasPublicas_ExecucaoOrcamentariaFinanceir
+http://hwww.tjsp.jus.br/CanaisComunicacao/Transparencia/ContasPublicas_OrcamentoAnual_Default
+http://hwww.tjsp.jus.br/CanaisComunicacao/Transparencia/ControleInterno_Default
+http://hwww.tjsp.jus.br/CanaisComunicacao/Transparencia/Licitacoes_Default
+http://hwww.tjsp.jus.br/ConhecaOTJ/PlanejamentoEstrategico
+http://hwww.tjsp.jus.br/CanaisComunicacao/Transparencia/ContasPublicas_RelatoriosGestaoFiscal_Defaul
+http://hwww.tjsp.jus.br/CanaisComunicacao/Transparencia/UnidadeGerenciamentoProjetos_Default
+http://hwww.tjsp.jus.br/CanaisComunicacao/Transparencia/PlanoPlurianual_Default
