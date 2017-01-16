@@ -42,6 +42,6 @@ if(grunt.option('tags'))
   });
 
 
-  grunt.loadNpmTasks('grunt-axe-webdriver');
+  grunt.loadNpmTasks('grunt-axe-webdriver2');
   grunt.registerTask('default', ['axe-webdriver']);
 };
