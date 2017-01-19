@@ -1,4 +1,4 @@
-var AxeRunner = require("./lib/axeTaskRunner.js");
+var AxeRunner = require("./axeTaskRunner.js");
 var runner = new AxeRunner("output.json");
 
 runner.run();
