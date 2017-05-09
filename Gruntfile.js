@@ -1,5 +1,5 @@
 module.exports = function (grunt) {
-  'use strict'
+  'use strict';
   
   var GruntConfiguration = require('./lib/gruntConfiguration.js');
   var gruntConf = new GruntConfiguration(grunt);
@@ -16,7 +16,6 @@ module.exports = function (grunt) {
       }
     },
   });
-
 
   grunt.loadNpmTasks('grunt-axe-webdriver');
   grunt.registerTask('default', ['axe-webdriver']);
