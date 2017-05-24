@@ -12,7 +12,14 @@ module.exports = function (grunt) {
         options: config.options,
         urls: config.urls,
         dest: "output.json",
-        junitDest: "output.xml"
+        junitDest: "output.xml",
+        loginurl: '',
+	      userControlName: 'Email',
+	      passControlName: 'Password',
+	      user: 'a@b.c',
+	      pass: 'P2ssw0rd',
+	      titleToWai: 'Error - My ASP.NET Application',
+	      loginButtonName: 'Login'
       }
     },
   });
