@@ -13,7 +13,7 @@ module.exports = function (grunt) {
         urls: config.urls,
         dest: "output.json",
         junitDest: "output.xml",
-        loginurl: '',
+        loginurl: 'http://testeaccess2.azurewebsites.net/Account/Login',
 	      userControlName: 'Email',
 	      passControlName: 'Password',
 	      user: 'a@b.c',
