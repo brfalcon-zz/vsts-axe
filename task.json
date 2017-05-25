@@ -50,6 +50,77 @@
             "helpMarkDown": "Tags used to filter the tasks, separated by comma.",
             "required": false
         },
+
+        {
+            "name": "loginurl",
+            "type": "string",
+            "label": "URL to Login",
+            "defaultValue": "",
+            "helpMarkDown": "URL used to provide user and pass before running the validation, leave in blank if no login is required",
+            "required": false
+        },
+
+
+                {
+            "name": "userControlName",
+            "type": "string",
+            "label": "HTML id of UserName Control",
+            "defaultValue": "",
+            "helpMarkDown": "Id of the object used to type username in order to login in the app",
+            "required": false
+        },
+
+        {
+            "name": "passControlName",
+            "type": "string",
+            "label": "HTML id of Password Control",
+            "defaultValue": "",
+            "helpMarkDown": "Id of the object used to type password in order to login in the app",
+            "required": false
+        },
+
+
+
+
+                {
+            "name": "user",
+            "type": "string",
+            "label": "User Name",
+            "defaultValue": "",
+            "helpMarkDown": "Value of the User Name typed in the login page of the app",
+            "required": false
+        },
+
+                {
+            "name": "pass",
+            "type": "string",
+            "label": "Password",
+            "defaultValue": "",
+            "helpMarkDown": "Value of the Password typed in the login page of the app",
+            "required": false
+        },
+
+        {
+            "name": "loginButtonName",
+            "type": "string",
+            "label": "HTML id of Login Button",
+            "defaultValue": "",
+            "helpMarkDown": "Id of the button clicked after type user and pass to submit login",
+            "required": false
+        },
+
+
+        {
+            "name": "titleToWait",
+            "type": "string",
+            "label": "Title to wait",
+            "defaultValue": "",
+            "helpMarkDown": "Title of the landing page after login",
+            "required": false
+        },
+
+
+
            {
             "name": "documenturl",
             "type": "string",

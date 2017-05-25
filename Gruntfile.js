@@ -6,6 +6,7 @@ module.exports = function (grunt) {
 
   var config = gruntConf.getConfig();
 
+
   grunt.initConfig({
     "axe-webdriver": {
       PhantomJS: {
@@ -13,13 +14,13 @@ module.exports = function (grunt) {
         urls: config.urls,
         dest: "output.json",
         junitDest: "output.xml",
-        loginurl: 'http://testeaccess2.azurewebsites.net/Account/Login',
-	      userControlName: 'Email',
-	      passControlName: 'Password',
-	      user: 'a@b.c',
-	      pass: 'P2ssw0rd',
-	      titleToWait: 'Error - My ASP.NET Application',
-	      loginButtonName: 'Login'
+        loginurl: config.loginurl,
+	      userControlName: config.userControlName,
+	      passControlName: config.passControlName,
+	      user: config.user,
+	      pass: config.pass,
+	      titleToWait: config.titleToWait,
+	      loginButtonName: config.loginButtonName
       }
     },
   });

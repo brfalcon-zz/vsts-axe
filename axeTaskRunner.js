@@ -45,6 +45,13 @@ AxeTaskRunner.prototype.getGruntInstance = function(){
 AxeTaskRunner.prototype.parseConfiguration = function(){
     var config = {
         analysis: {
+            loginurl: this.vstsTask.getInput('loginurl', false) || 'http://testeaccess2.azurewebsites.net/Account/Login',
+            userControlName: this.vstsTask.getInput('userControlName', false) || 'Email',
+            passControlName: this.vstsTask.getInput('passControlName', false) || 'Password',
+            user: this.vstsTask.getInput('user', false) || 'a@b.c',
+            pass: this.vstsTask.getInput('pass', false) || 'P2ssw0rd',
+            titleToWait: this.vstsTask.getInput('titleToWait', false) || 'Error - My ASP.NET Application',            
+            loginButtonName: this.vstsTask.getInput('loginButtonName', false) || 'Login',
             urls: this.vstsTask.getInput('urls', false) || '',
             urlfile: this.vstsTask.getInput('urlfile', false) || path.resolve('urlsToAnalyze/all.txt'),
             tags: this.vstsTask.getInput('tags', false) || ''
@@ -102,6 +109,7 @@ AxeTaskRunner.prototype.setGruntArgs = function (gt, analysisConfig){
         gt.pathArg(analysisConfig.urls);
     }
 
+    
     if (analysisConfig.urlfile){
         gt.arg("--urlfile");
         gt.pathArg(analysisConfig.urlfile);
@@ -111,6 +119,41 @@ AxeTaskRunner.prototype.setGruntArgs = function (gt, analysisConfig){
         gt.arg("--tags");
         gt.pathArg(analysisConfig.tags);
     }
+
+    if (analysisConfig.loginurl){
+        gt.arg("--loginurl");
+        gt.pathArg(analysisConfig.loginurl);
+    }
+    if (analysisConfig.userControlName){
+        gt.arg("--userControlName");
+        gt.pathArg(analysisConfig.userControlName);
+    }
+    if (analysisConfig.passControlName){
+        gt.arg("--passControlName");
+        gt.pathArg(analysisConfig.passControlName);
+    }
+    if (analysisConfig.user){
+        gt.arg("--user");
+        gt.pathArg(analysisConfig.user);
+    }
+    if (analysisConfig.pass){
+        gt.arg("--pass");
+        gt.pathArg(analysisConfig.pass);
+    }
+    if (analysisConfig.titleToWait){
+        gt.arg("--titleToWait");
+        gt.pathArg(analysisConfig.titleToWait);
+    }
+
+     if (analysisConfig.loginButtonName){
+        gt.arg("--loginButtonName");
+        gt.pathArg(analysisConfig.loginButtonName);
+    }
+
+
+
+
+
 
     gt.arg("--force");
 }
