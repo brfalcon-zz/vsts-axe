@@ -18,12 +18,12 @@ module.exports = function (grunt) {
 	      passControlName: 'Password',
 	      user: 'a@b.c',
 	      pass: 'P2ssw0rd',
-	      titleToWai: 'Error - My ASP.NET Application',
+	      titleToWait: 'Error - My ASP.NET Application',
 	      loginButtonName: 'Login'
       }
     },
   });
 
-  grunt.loadNpmTasks('grunt-axe-webdriver');
+  grunt.loadNpmTasks('grunt-axe-webdriver-private');
   grunt.registerTask('default', ['axe-webdriver']);
 };
