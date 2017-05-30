@@ -45,13 +45,13 @@ AxeTaskRunner.prototype.getGruntInstance = function(){
 AxeTaskRunner.prototype.parseConfiguration = function(){
     var config = {
         analysis: {
-            loginurl: this.vstsTask.getInput('loginurl', false) || 'http://testeaccess2.azurewebsites.net/Account/Login',
-            userControlName: this.vstsTask.getInput('userControlName', false) || 'Email',
-            passControlName: this.vstsTask.getInput('passControlName', false) || 'Password',
-            user: this.vstsTask.getInput('user', false) || 'a@b.c',
-            pass: this.vstsTask.getInput('pass', false) || 'P2ssw0rd',
-            titleToWait: this.vstsTask.getInput('titleToWait', false) || 'Error - My ASP.NET Application',            
-            loginButtonName: this.vstsTask.getInput('loginButtonName', false) || 'Login',
+            loginurl: this.vstsTask.getInput('loginurl', false) || 'http://tst01.tjsp.jus.br/RHF/RecepcaoDocumentos',
+            userControlName: this.vstsTask.getInput('userControlName', false) || 'Usuario',
+            passControlName: this.vstsTask.getInput('passControlName', false) || 'Senha',
+            user: this.vstsTask.getInput('user', false) || '33978834820',
+            pass: this.vstsTask.getInput('pass', false) || '12345678',
+            titleToWait: this.vstsTask.getInput('titleToWait', false) || "ID3206: A SignInResponse message may only redirect within the current web application: '/RHF/RecepcaoDocumentos' is not allowed.",            
+            loginButtonName: this.vstsTask.getInput('loginButtonName', false) || 'btn btn-lg btn-primary btn-block',
             urls: this.vstsTask.getInput('urls', false) || '',
             urlfile: this.vstsTask.getInput('urlfile', false) || path.resolve('urlsToAnalyze/all.txt'),
             tags: this.vstsTask.getInput('tags', false) || ''
