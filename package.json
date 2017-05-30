@@ -1,13 +1,13 @@
 {
   "name": "AccessibilityChecker",
   "version": "0.1.0",
-  "devDependencies": {
-    "grunt": "~0.4.5",
+  "devDependencies": {   
     "grunt-contrib-jshint": "~0.10.0",
     "grunt-contrib-nodeunit": "~0.4.1",
     "grunt-contrib-uglify": "~0.5.0"
   },
   "dependencies": {
+     "grunt": "~0.4.5",
     "axe-core": "^2.2.0",
     "documentdb": "^1.11.0",
     "grunt-axe-webdriver-private": "0.0.9",
