@@ -2051,9 +2051,9 @@
       }
     ],
     "inapplicable": [],
-    "timestamp": 1496090578878,
+    "timestamp": 1496267695764,
     "url": "http://tst01.tjsp.jus.br/RHF/RecepcaoDocumentos/Candidato",
-    "time": 720
+    "time": 826
   },
   {
     "violations": [
@@ -5979,9 +5979,9 @@
     ],
     "incomplete": [],
     "inapplicable": [],
-    "timestamp": 1496090625331,
+    "timestamp": 1496267699012,
     "url": "http://tst01.tjsp.jus.br/RHF/RecepcaoDocumentos/Candidato/EnvioCandidato",
-    "time": 1601
+    "time": 1606
   },
   {
     "violations": [
@@ -9907,8 +9907,8 @@
     ],
     "incomplete": [],
     "inapplicable": [],
-    "timestamp": 1496090630413,
+    "timestamp": 1496267700679,
     "url": "http://tst01.tjsp.jus.br/RHF/RecepcaoDocumentos/Candidato/EnvioCandidato?concursoEscolhidoCod=927562203",
-    "time": 1815
+    "time": 1395
   }
 ]

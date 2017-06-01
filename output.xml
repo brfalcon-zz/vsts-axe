@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <testsuites>
-  <testsuite name="http://tst01.tjsp.jus.br/RHF/RecepcaoDocumentos/Candidato" timestamp="1496090578878" time="720" tests="77" failures="7" errors="0" skipped="0">
+  <testsuite name="http://tst01.tjsp.jus.br/RHF/RecepcaoDocumentos/Candidato" timestamp="1496267695764" time="826" tests="77" failures="7" errors="0" skipped="0">
     <testcase classname="http://tst01.tjsp.jus.br/RHF/RecepcaoDocumentos/Candidato.aria-valid-attr-value" name="#headingconcurso187 > .panel-title > a">
       <failure message="ARIA attributes must conform to valid values (https://dequeuniversity.com/rules/axe/2.2/aria-valid-attr-value?application=webdriverjs)&#xA;">
         <![CDATA[Target: #headingconcurso187 > .panel-title > a
@@ -169,7 +169,7 @@ Fix any of the following:
     <testcase classname="http://tst01.tjsp.jus.br/RHF/RecepcaoDocumentos/Candidato.meta-viewport-large" name=".js.flexbox.flexboxlegacy.canvas.canvastext.no-webgl.touch.no-geolocation.postmessage.websqldatabase.indexeddb.hashchange.history.draganddrop.websockets.rgba.hsla.multiplebgs.backgroundsize.borderimage.borderradius.boxshadow.textshadow.opacity.cssanimations.csscolumns.cssgradients.cssreflections.csstransforms.csstransforms3d.csstransitions.fontface.generatedcontent.no-video.no-audio.localstorage.sessionstorage.webworkers.applicationcache.svg.inlinesvg.smil.svgclippaths > head > meta:nth-of-type(3)"/>
     <testcase classname="http://tst01.tjsp.jus.br/RHF/RecepcaoDocumentos/Candidato.meta-viewport" name=".js.flexbox.flexboxlegacy.canvas.canvastext.no-webgl.touch.no-geolocation.postmessage.websqldatabase.indexeddb.hashchange.history.draganddrop.websockets.rgba.hsla.multiplebgs.backgroundsize.borderimage.borderradius.boxshadow.textshadow.opacity.cssanimations.csscolumns.cssgradients.cssreflections.csstransforms.csstransforms3d.csstransitions.fontface.generatedcontent.no-video.no-audio.localstorage.sessionstorage.webworkers.applicationcache.svg.inlinesvg.smil.svgclippaths > head > meta:nth-of-type(3)"/>
   </testsuite>
-  <testsuite name="http://tst01.tjsp.jus.br/RHF/RecepcaoDocumentos/Candidato/EnvioCandidato" timestamp="1496090625331" time="1601" tests="150" failures="29" errors="0" skipped="0">
+  <testsuite name="http://tst01.tjsp.jus.br/RHF/RecepcaoDocumentos/Candidato/EnvioCandidato" timestamp="1496267699012" time="1606" tests="150" failures="29" errors="0" skipped="0">
     <testcase classname="http://tst01.tjsp.jus.br/RHF/RecepcaoDocumentos/Candidato/EnvioCandidato.color-contrast" name="#form0 > .row > .col-md-3 > .btn.btn-success">
       <failure message="Elements must have sufficient color contrast (https://dequeuniversity.com/rules/axe/2.2/color-contrast?application=webdriverjs)&#xA;">
         <![CDATA[Target: #form0 > .row > .col-md-3 > .btn.btn-success
@@ -712,7 +712,7 @@ Fix any of the following:
     <testcase classname="http://tst01.tjsp.jus.br/RHF/RecepcaoDocumentos/Candidato/EnvioCandidato.td-headers-attr" name="#tableAguardandoAprovacao"/>
     <testcase classname="http://tst01.tjsp.jus.br/RHF/RecepcaoDocumentos/Candidato/EnvioCandidato.th-has-data-cells" name="#tableAguardandoAprovacao"/>
   </testsuite>
-  <testsuite name="http://tst01.tjsp.jus.br/RHF/RecepcaoDocumentos/Candidato/EnvioCandidato?concursoEscolhidoCod=927562203" timestamp="1496090630413" time="1815" tests="150" failures="29" errors="0" skipped="0">
+  <testsuite name="http://tst01.tjsp.jus.br/RHF/RecepcaoDocumentos/Candidato/EnvioCandidato?concursoEscolhidoCod=927562203" timestamp="1496267700679" time="1395" tests="150" failures="29" errors="0" skipped="0">
     <testcase classname="http://tst01.tjsp.jus.br/RHF/RecepcaoDocumentos/Candidato/EnvioCandidato?concursoEscolhidoCod=927562203.color-contrast" name="#form0 > .row > .col-md-3 > .btn.btn-success">
       <failure message="Elements must have sufficient color contrast (https://dequeuniversity.com/rules/axe/2.2/color-contrast?application=webdriverjs)&#xA;">
         <![CDATA[Target: #form0 > .row > .col-md-3 > .btn.btn-success

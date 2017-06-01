@@ -45,22 +45,16 @@ AxeTaskRunner.prototype.getGruntInstance = function(){
 AxeTaskRunner.prototype.parseConfiguration = function(){
     var config = {
         analysis: {
-            loginurl: this.vstsTask.getInput('loginurl', false) || 'http://tst01.tjsp.jus.br/RHF/RecepcaoDocumentos',
-            userControlName: this.vstsTask.getInput('userControlName', false) || 'Usuario',
-            passControlName: this.vstsTask.getInput('passControlName', false) || 'Senha',
-            user: this.vstsTask.getInput('user', false) || '33978834820',
-            pass: this.vstsTask.getInput('pass', false) || '12345678',
-            titleToWait: this.vstsTask.getInput('titleToWait', false) || "ID3206: A SignInResponse message may only redirect within the current web application: '/RHF/RecepcaoDocumentos' is not allowed.",            
-            loginButtonName: this.vstsTask.getInput('loginButtonName', false) || 'btn btn-lg btn-primary btn-block',
+            loginurl: this.vstsTask.getInput('loginurl', false) || "http://tst01.tjsp.jus.br/RHF/Acesso/Login/SignIn?ReturnUrl=%2FRHF%2FAcesso%2Fwsfederation%3Fwa%3Dwsignin1.0%26wtrealm%3Dhttp%253a%252f%252ftst01.tjsp.jus.br%252fRHF%252fRecepcaoDocumentos%252f%26wctx%3Drm%253d0%2526id%253dpassive%2526ru%253d%25252fRHF%25252fRecepcaoDocumentos%26wct%3D2017-05-31T21%253a46%253a59Z",
+            userControlName: this.vstsTask.getInput('userControlName', false) || "//input[@id='Usuario']",
+            passControlName: this.vstsTask.getInput('passControlName', false) || "//input[@id='Senha']",
+            user: this.vstsTask.getInput('user', false) || "33978834820",
+            pass: this.vstsTask.getInput('pass', false) || "12345678",
+            titleToWait: this.vstsTask.getInput('titleToWait', false) || "ID3206: A SignI",            
+            loginButtonName: this.vstsTask.getInput('loginButtonName', false) || "//button[@type='submit']",
             urls: this.vstsTask.getInput('urls', false) || '',
             urlfile: this.vstsTask.getInput('urlfile', false) || path.resolve('urlsToAnalyze/all.txt'),
             tags: this.vstsTask.getInput('tags', false) || ''
-        },
-        documentDb:{
-            documentUrl: this.vstsTask.getInput('documenturl', false) || 'https://accesscheck.documents.azure.com:443',
-            primaryKey: this.vstsTask.getInput('primarykey', false) || 'qNRJ2ZF54py0VCm0nZ4OKx6DrpKWa4fQNSkWD7U1VfLkE4eBq3xz5lKJgj3fKklfu1IEVR9nQf3cb71fi2IwaA==',
-            databaseId: this.vstsTask.getInput('databaseid', false) || 'NewPortal',
-            collectionId: this.vstsTask.getInput('collectionid', false) || 'TJSP'
         }
     };
 

@@ -14,7 +14,7 @@
     "version": {
         "Major": 0,
         "Minor": 1,
-        "Patch": 21
+        "Patch": 22
     },
     "demands": [
         "node.js"
@@ -64,18 +64,18 @@
                 {
             "name": "userControlName",
             "type": "string",
-            "label": "HTML id of UserName Control",
+            "label": "UserName Control xPath",
             "defaultValue": "",
-            "helpMarkDown": "Id of the object used to type username in order to login in the app",
+            "helpMarkDown": "xPath of the Control used to type the username",
             "required": false
         },
 
         {
             "name": "passControlName",
             "type": "string",
-            "label": "HTML id of Password Control",
+            "label": "Password Control xPath",
             "defaultValue": "",
-            "helpMarkDown": "Id of the object used to type password in order to login in the app",
+            "helpMarkDown": "xPath of the Control used to type password",
             "required": false
         },
 
@@ -103,9 +103,9 @@
         {
             "name": "loginButtonName",
             "type": "string",
-            "label": "HTML id of Login Button",
+            "label": "Login Button x Path",
             "defaultValue": "",
-            "helpMarkDown": "Id of the button clicked after type user and pass to submit login",
+            "helpMarkDown": "xPath used to locate the button used to click and perform the login",
             "required": false
         },
 
@@ -117,39 +117,11 @@
             "defaultValue": "",
             "helpMarkDown": "Title of the landing page after login",
             "required": false
-        },
-
-
-
-           {
-            "name": "documenturl",
-            "type": "string",
-            "label": "DcoumentDB Endpoint",
-            "defaultValue": "",
-            "helpMarkDown": "End point to database to save results, leave blank to slip this step",
-            "required": false
-        },   {
-            "name": "collectionid",
-            "type": "string",
-            "label": "Collection ID",
-            "defaultValue": "",
-            "helpMarkDown": "Collection ID to save results",
-            "required": false
-        },   {
-            "name": "databaseid",
-            "type": "string",
-            "label": "databaseid",
-            "defaultValue": "",
-            "helpMarkDown": "Database ID to save results",
-            "required": false
-        },   {
-            "name": "primarykey",
-            "type": "string",
-            "label": "Document write Key",
-            "defaultValue": "",
-            "helpMarkDown": "Key to authenticate in DocumentDB, should be stored in a encripted variable.",
-            "required": false
         }
+
+
+
+          
         
     ],
     "execution": {
