@@ -1,3 +1,1 @@
-http://tst01.tjsp.jus.br/RHF/RecepcaoDocumentos/Candidato
-http://tst01.tjsp.jus.br/RHF/RecepcaoDocumentos/Candidato/EnvioCandidato
-http://tst01.tjsp.jus.br/RHF/RecepcaoDocumentos/Candidato/EnvioCandidato?concursoEscolhidoCod=927562203
+http://www.tjsp.jus.br;urlsToAnalyze\prescript.txt
